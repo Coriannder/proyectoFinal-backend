@@ -14,6 +14,8 @@ import { cpus } from 'os'
 import { logger } from './utils/logger.js'
 import { mode } from './utils/yargs.js'
 import { LogoutRouter } from './routes/logout.js'
+import { chatWebsocket } from './utils/chat.js'
+import { RouterChat } from './routes/chat.js'
 
 
 const app = express()
@@ -43,10 +45,14 @@ app.use( '/register' , RegisterRouter.start() )
 app.use( '/error' , ErrorRouter.start() )
 app.use( '/home' , HomeRouter.start() )
 app.use( '/cart' , RouterCart.start() )
+app.use( '/chat' , RouterChat.start() )
+
 app.get('*', (req, res) => {
     res.redirect('/login')
 })
 
+//-------------------------WEBSOCKET----------------------------//
+const io = chatWebsocket(httpServer)
 
 //--------------------------Modo CLUSTER------------------------//
 

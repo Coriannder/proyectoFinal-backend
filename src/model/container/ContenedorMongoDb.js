@@ -49,9 +49,9 @@ class ContenedorMongoDb {
     async guardar(elemento) {
         try {
             const res = await this.collection.create(elemento)
-            return  this.dto.transform(transformMongoObject(res))
+            return this.dto.transform(transformMongoObject(res))
         } catch (error) {
-            logger.error(error )
+            logger.error( error )
             return false
         }
     }

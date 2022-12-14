@@ -63,7 +63,6 @@ export class CartServices {
     buyCart = async ( user ) => {
 
         const usuario =  (await this.usuariosDao.listar(user))[0]
-        console.log('usuario' , usuario.nombre)
         let miCarrito = carritos.find(carrito => carrito.user === user)
         const guardar = await carritosDao.guardar(miCarrito)
         sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra

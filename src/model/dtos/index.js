@@ -1,6 +1,7 @@
 import UsuarioDto from "./usuarioDto.js"
 import ProductoDto from "./productoDto.js"
 import CarritoDto from "./carritoDto.js"
+import ChatDto from "./chatDto.js"
 
 
 export default class Dto {
@@ -27,30 +28,15 @@ export default class Dto {
                 objectAsDto = ProductoDto.asDto(object)
                 break
 
+            case 'Chats':
+                objectAsDto = ChatDto.asDto(object)
+                break
+
             default: return 'error'
         }
 
-        /* if(objectAsDto.length === 1) {
-            return objectAsDto[0]
-        } else{ */
-            return objectAsDto
-        /* } */
+        return objectAsDto
 
     }
 }
 
-
-
-/* import UsuarioDto from './usuarioDto.js'
-
-export let asDto
-
-switch ( 'Usuarios' ) {
-
-    case 'Usuarios':
-
-        const { default: UsuarioDto } = await import ('./usuarioDto.js')
-        asDto = UsuarioDto.asDto()
-
-        break
-} */

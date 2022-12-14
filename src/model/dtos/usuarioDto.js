@@ -1,4 +1,4 @@
-import { persistance } from "../../utils/yargs.js"
+
 
 export default class UsuarioDto {
 
@@ -15,7 +15,7 @@ export default class UsuarioDto {
 
     static asDto(usuarios) {
         if (Array.isArray(usuarios)) {
-            return usuarios.map(usuario => new UsuarioDto(usuario))
+            return usuarios.map(usuario => new UsuarioDto( usuario ))
         } else {
             return new UsuarioDto( usuarios )
         }

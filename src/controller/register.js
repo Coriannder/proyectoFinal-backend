@@ -23,16 +23,16 @@ export class RegisterController {
             photo: req.body.fileName,
             phone: '+549' + req.body.telefono
         }
-    
+
         const response = await this.registerServices.saveNewUser( newUser )
         console.log('response register' , response)
-    
+
         if(response.error){
             req.session.message = response.message
             req.session.route = response.route
             req.session.fileName = newUser.photo
             res.redirect('/error')
-            
+
         }else{
             res.redirect('/login')
         }

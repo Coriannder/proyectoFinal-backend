@@ -2,7 +2,7 @@ import { persistance } from '../../utils/yargs.js'
 
 let productosDao
 let carritosDao = ''
-let mensajesDao
+let chatDao
 let usuariosDao
 
 switch ( persistance ) {
@@ -16,8 +16,8 @@ switch ( persistance ) {
         const { default: CarritosDaoMongoDb } = await import ('./carritos/CarritosDaoMongoDb.js')
         carritosDao = CarritosDaoMongoDb.getInstance()
 
-        /* const { default: MensajesDaoMongoDb } = await import ('./mensajes/MensajesDaoMongoDb.js')
-        mensajesDao = new MensajesDaoMongoDb() */
+        const { default: ChatDaoMongoDb } = await import ('./chat/ChatDaoMongoDb.js')
+        chatDao = ChatDaoMongoDb.getInstance()
 
         const { default: UsuariosDaoMongoDb } = await import ('./usuarios/UsuariosDaoMongoDb.js')
         usuariosDao = UsuariosDaoMongoDb.getInstance()
@@ -32,8 +32,8 @@ switch ( persistance ) {
         const { default: CarritosDaoMemoria } = await import ('./carritos/CarritosDaoMemoria.js')
         carritosDao = CarritosDaoMemoria.getInstance()
 
-        /* const { default: MensajesDaoMongoDb } = await import ('./mensajes/MensajesDaoMongoDb.js')
-        mensajesDao = new MensajesDaoMongoDb() */
+        const { default: ChatDaoMemoria } = await import ('./chat/ChatDaoMemoria.js')
+        chatDao = ChatDaoMemoria.getInstance()
 
         const { default: UsuariosDaoMemoria } = await import ('./usuarios/UsuariosDaoMemoria.js')
         usuariosDao = UsuariosDaoMemoria.getInstance()
@@ -41,5 +41,5 @@ switch ( persistance ) {
         break
 }
 
-export {productosDao, carritosDao, mensajesDao, usuariosDao }
+export { productosDao, carritosDao, chatDao, usuariosDao }
 
