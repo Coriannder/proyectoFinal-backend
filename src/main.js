@@ -3,7 +3,7 @@ import { Server as HttpServer }  from 'http'
 import session from 'express-session'
 import { mongoSession } from './middleware/mongoSession.js'
 import passport from 'passport'
-import { port } from './config/config.js'
+import config from './config/config.js'
 import { LoginRouter } from './routes/login.js'
 import {  RegisterRouter } from './routes/register.js'
 import { ErrorRouter } from './routes/error.js'
@@ -16,6 +16,12 @@ import { mode } from './utils/yargs.js'
 import { LogoutRouter } from './routes/logout.js'
 import { chatWebsocket } from './utils/chat.js'
 import { RouterChat } from './routes/chat.js'
+import cors from 'cors'
+import { ConfigRouter } from './routes/config.js'
+
+//import config from './config/config.js'
+
+console.log('config.PERSISTANCE' , config.PERSISTANCE)
 
 
 const app = express()
@@ -24,6 +30,7 @@ const httpServer = new HttpServer(app)
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
+if(config.NODE_ENV == 'development') app.use(cors())
 
 
 //------------------Configuracion EJS--------------------//
@@ -46,6 +53,7 @@ app.use( '/error' , ErrorRouter.start() )
 app.use( '/home' , HomeRouter.start() )
 app.use( '/cart' , RouterCart.start() )
 app.use( '/chat' , RouterChat.start() )
+app.use( '/config' , ConfigRouter.start())
 
 app.get('*', (req, res) => {
     res.redirect('/login')
@@ -76,7 +84,7 @@ if( mode === 'cluster' ){
     } else {
 //------------------Configuracion Server---------------------------------//
 
-        const server = httpServer.listen(port, ()=>{
+        const server = httpServer.listen(config.PORT, ()=>{
             logger.info(`Servidor escuchando en el puerto ${server.address().port}`, `numero de cpus ${numCPUs}`)
         })
         server.on(`error`, error => logger.fatal(`Error en servidor: ${error}`))
@@ -86,7 +94,7 @@ if( mode === 'cluster' ){
 
     //------------------Configuracion Server---------------------------------//
 
-    const server = httpServer.listen(port, () => {
+    const server = httpServer.listen(config.PORT, () => {
         try {
             logger.info(`Servidor escuchando en el puerto ${server.address().port}`, `numero de cpus ${numCPUs}`)
         } catch (error) {

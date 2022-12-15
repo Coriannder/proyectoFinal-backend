@@ -1,17 +1,28 @@
 import * as dotenv from 'dotenv'
 dotenv.config()
+import { NODE_ENV , PERSISTANCE , PORT } from '../utils/yargs.js'
 
-export const urlMongo = process.env.URL_MONGO
-export const secretSessionMongo = process.env.SECRET_SESSION_MONGO
-export const port = process.env.PORT
-export const userMailAdmin = process.env.USER_MAILADMIN
-export const passMailAdmin = process.env.PASS_MAILADMIN
-export const twilioSID = process.env.TWILIO_ACCOUNT_SID
-export const twilioMessagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID
-export const twilioToken = process.env.TWILIO_AUTH_TOKEN
-export const twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER
-export const twilioWhastsAppPhoneNumber = process.env.TWILIO_WHATSAPP_PHONE_NUMBER
-export const adminWhatsAppPhoneNumber = process.env.ADMIN_WHATSAPP_PHONE_NUMBER
-export const adminPhoneNumber = process.env.ADMIN_PHONE_NUMBER
+let persistance
+let port
+let node_env
 
+if(NODE_ENV === 'production'){
+    persistance = 'mongo'
+    port = 8083
+    node_env = NODE_ENV
+} else {
+    persistance = PERSISTANCE
+    port = PORT
+}
 
+export default {
+
+    NODE_ENV: NODE_ENV,
+    PERSISTANCE: persistance || process.env.PERSISTANCE,
+    PORT: port || process.env.PORT,
+    URL_MONGO: process.env.URL_MONGO,
+    SECRET_SESSION_MONGO: process.env.SECRET_SESSION_MONGO,
+    USER_MAILADMIN: process.env.USER_MAILADMIN,
+    PASS_MAILADMIN: process.env.PASS_MAILADMIN
+
+}

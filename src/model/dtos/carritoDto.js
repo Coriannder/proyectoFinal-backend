@@ -1,4 +1,3 @@
-import { persistance } from "../../utils/yargs.js"
 
 export default class CarritoDto {
 

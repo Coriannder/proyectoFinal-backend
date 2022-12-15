@@ -1,13 +1,13 @@
 import { createTransport } from 'nodemailer';
-import { userMailAdmin, passMailAdmin } from '../config/config.js';
+import config from '../config/config.js';
 import { logger } from './logger.js';
 
 const transporter = createTransport({
     service: 'gmail',
     port: 587,
     auth: {
-        user: userMailAdmin,
-        pass: passMailAdmin
+        user: config.USER_MAILADMIN,
+        pass: config.PASS_MAILADMIN
     }
 });
 
@@ -17,7 +17,7 @@ export const sendMailNewUser = async ( newUser ) => {
 
     const mailOptions = {
         from: 'Servidor Node.js',
-        to: userMailAdmin,
+        to: config.USER_MAILADMIN,
         subject: 'Nuevo Usuario',
         html:
         `<h1 style="color: blue;">Nuevo usuario registrado</h1>'
@@ -57,7 +57,7 @@ export const sendMailNewCart = async ( nombre, email, cart ) => {
 
     const mailOptions = {
         from: 'Servidor Node.js',
-        to: userMailAdmin,
+        to: config.USER_MAILADMIN,
         subject: 'nuevo pedido de ' + nombre ,
         html: `<h1 style="color: blue;">Nueva compra del usuario: <span style="color: green;"> ${email} </span></h1><div><ul>` 
         + listaProductosCarrito + `<h2>Total $ ${cart.total} </h2></ul><div>`

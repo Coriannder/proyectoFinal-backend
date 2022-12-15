@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import { LogoutController } from '../controller/logout.js'
-//import { authenticate } from '../middleware/passport.js';
+
 
 
 

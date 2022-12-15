@@ -4,6 +4,7 @@ let instance = null;
 
 class ProductosDaoMemoria extends ContenedorMemoria {
     constructor () {
+
         super('Productos')
     }
 

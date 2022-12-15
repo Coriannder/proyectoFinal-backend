@@ -1,7 +1,4 @@
 import Dto from "../dtos/index.js";
-
-
-
 class ContenedorMemoria {
 
     constructor(nombreCollection) {
@@ -11,7 +8,7 @@ class ContenedorMemoria {
 
     async listar(id) {
         const elem = this.dto.transform(this.elementos.find(elem => elem.id == id))
-        return elem || false;
+        return [elem] || false;
     }
 
     async listarAll() {

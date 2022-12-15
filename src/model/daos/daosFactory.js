@@ -1,11 +1,11 @@
-import { persistance } from '../../utils/yargs.js'
+import config from '../../config/config.js'
 
 let productosDao
 let carritosDao = ''
 let chatDao
 let usuariosDao
 
-switch ( persistance ) {
+switch ( config.PERSISTANCE ) {
 
     case 'mongo':
 

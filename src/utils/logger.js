@@ -17,10 +17,3 @@ log4js.configure({
 })
 
 export const logger = log4js.getLogger()
-
-/* log4js.configure({
-    appenders: { 
-      file: { type: 'file', filename: path.join(__dirname, 'log/file.log') }
-    },
-    categories: { default: { appenders: ['file'], level: 'info' } }
-  }); */

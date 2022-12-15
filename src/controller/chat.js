@@ -14,14 +14,18 @@ export class ChatController {
 	}
 
     renderChat = async ( req , res ) => {
+        if(req.isAuthenticated()){
+            const user = req.session.passport.user
+            const nombre = await this.chatServices.getUserName(user)
 
-        const user = req.session.passport.user
-        const nombre = await this.chatServices.getUserName(user)
-
-        res.render('pages/chat', {
-            user: user,
-            nombre : nombre,
-            active: 'chat'
-        })
+            res.render('pages/chat', {
+                user: user,
+                filter: global.filter,
+                nombre : nombre,
+                active: 'chat'
+            })
+        } else {
+            res.redirect('/login' )
+        }
     }
 }

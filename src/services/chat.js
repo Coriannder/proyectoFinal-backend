@@ -22,11 +22,6 @@ export class ChatsServices {
         return await this.chatDao.listarAll()
     }
 
-    getUserMEssages = async (user) => {
-        const chat = await this.chatDao.listarAll()
-        return chat
-    }
-
     saveNewMessage = async (message) => {
         const type = 'user'
         const email = (await this.usuariosDao.listar(message.user))[0].email

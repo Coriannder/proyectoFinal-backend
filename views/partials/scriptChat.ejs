@@ -19,12 +19,9 @@
     /* Funcion para agregar mensaje al chat */
     const addMessage = () => {
         const user = document.getElementById("userId").innerHTML
-        console.log(user)
-        console.log('user' , user)
         const body =  document.getElementById("newMessage").value
         const date = new Date().toLocaleString();
 
-        //const now = today.toLocaleString();
         const message = {
             user: user,
             date: date,

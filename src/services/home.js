@@ -17,6 +17,7 @@ export class HomeServices {
     getUserNameAndProducts = async (user) => {
 
         const nombre = (await this.usuariosDao.listar(user))[0].nombre
+        global.filterChat = (await this.usuariosDao.listar(user))[0].email
         global.productos = await this.productosDao.listarAll()
 
         return {
