@@ -84,7 +84,7 @@ if( mode === 'cluster' ){
     } else {
 //------------------Configuracion Server---------------------------------//
 
-        const server = httpServer.listen(config.PORT, ()=>{
+        const server = httpServer.listen(process.env.PORT, ()=>{
             logger.info(`Servidor escuchando en el puerto ${server.address().port}`, `numero de cpus ${numCPUs}`)
         })
         server.on(`error`, error => logger.fatal(`Error en servidor: ${error}`))
