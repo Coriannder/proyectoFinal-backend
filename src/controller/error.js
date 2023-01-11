@@ -16,8 +16,6 @@ export class ErrorController{
     getError = (req, res ) => {
 
         const route = req.session.route
-        const fileName = req.session.fileName
-        this.errorServices.deleteFile( route , fileName )
         res.render('pages/error' , {
             message: req.session.message || 'Error',
             route: req.session.route || 'login'

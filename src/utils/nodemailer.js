@@ -13,7 +13,6 @@ const transporter = createTransport({
 
 export const sendMailNewUser = async ( newUser ) => {
 
-    console.log(`public/uploads/${newUser.photo}`)
 
     const mailOptions = {
         from: 'Servidor Node.js',
@@ -30,13 +29,7 @@ export const sendMailNewUser = async ( newUser ) => {
                 <li>EMAIL: <span style="color: green;">${newUser.email}</span></li>
                 <li>Foto de perfil:   <img src="cid:photo" width="100" height="100"/></li>
             </ul>
-        </div>`,
-
-        attachments: [{
-            filename: newUser.photo,
-            path: `public/uploads/${newUser.photo}`,
-            cid: 'photo'
-        }]
+        </div>`
     }
 
     try {

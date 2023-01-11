@@ -16,21 +16,20 @@ export class RegisterController {
 
         const newUser = {
             nombre: req.body.nombre,
+            apellido: req.body.apellido,
             direccion: req.body.direccion,
             edad: req.body.edad,
             email: req.body.email,
             password: req.body.password,
-            photo: req.body.fileName,
-            phone: '+549' + req.body.telefono
+            phone: req.body.telefono
         }
-
+        console.log('req.body' , req.body)
         const response = await this.registerServices.saveNewUser( newUser )
         console.log('response register' , response)
 
         if(response.error){
             req.session.message = response.message
             req.session.route = response.route
-            req.session.fileName = newUser.photo
             res.redirect('/error')
 
         }else{
@@ -42,15 +41,3 @@ export class RegisterController {
         res.render('pages/register')
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

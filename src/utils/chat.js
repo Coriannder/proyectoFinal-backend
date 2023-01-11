@@ -2,16 +2,17 @@ import { Server } from "socket.io";
 import { ChatsServices } from "../services/chat.js";
 
 const chatServices = ChatsServices.getInstance()
-const chatArray = await chatServices.getAllChat()
+
 
 export const chatWebsocket = (httpServer) => {
 
     const io = new Server(httpServer);
 
-    io.on('connection', socket => {
+    io.on('connection', async socket => {
         console.log('Nuevo cliente conectado!')
 
         /* Envio los mensajes al cliente que se conectó */
+        const chatArray = await chatServices.getAllChat()
         socket.emit('messages', chatArray)
 
 

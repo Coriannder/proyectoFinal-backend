@@ -23,7 +23,7 @@ export class ChatsServices {
     }
 
     saveNewMessage = async (message) => {
-        const type = 'user'
+        let type = 'user'
         const email = (await this.usuariosDao.listar(message.user))[0].email
         console.log('email', email)
         if ( email === 'admin@admin.com' ) type = 'system'

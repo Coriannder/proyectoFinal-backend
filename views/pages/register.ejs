@@ -9,36 +9,36 @@
         <div class="container mt-4 mb-4" style="width: 500px;">
             <h2>Crear Cuenta</h2>
 
-            <form class="mt-4" action="/register" method="post" enctype="multipart/form-data">
+            <form class="mt-4" action="/register" method="post">
 
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Ingrese nombre</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" required>
+                    <label for="nombre" class="form-label" >Ingrese nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Lionel" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="apellido" class="form-label" >Ingrese apellido</label>
+                    <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Messi" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="direccion" class="form-label">Ingrese direccion</label>
-                    <input type="text" class="form-control" name="direccion" id="direccion" required>
+                    <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Cabildo 689 2B" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Ingrese telefono</label>
+                    <input type="number" class="form-control" name="telefono" id="telefono" placeholder="3816859545" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="edad" class="form-label">Ingrese edad</label>
-                    <input type="number" class="form-control" name="edad" id="edad" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="edad" class="form-label">Ingrese telefono</label>
-                    <input type="tel" class="form-control" name="telefono" id="telefono" required>
+                    <input type="number" class="form-control" name="edad" id="edad" placeholder="35" required>
                 </div>
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Ingrese email</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="photo" class="form-label">Seleccione foto de perfil</label>
-                    <input type="file" class="form-control" name="photo" id="photo" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="liomessi@gmail.com" required>
                 </div>
 
                 <div class="mb-3">
