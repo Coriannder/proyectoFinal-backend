@@ -24,7 +24,7 @@ export class CartServices {
 
     }
 
-    addProduct = async ( user , product ) => {
+    addProduct = ( user , product ) => {
 
         const price = global.productos.find( producto => producto.id === product.id ).price
         const title = global.productos.find( producto => producto.id === product.id ).title
@@ -48,7 +48,7 @@ export class CartServices {
         }
     }
 
-    deleteProduct = async  ( user , idProduct) => {
+    deleteProduct = ( user , idProduct) => {
 
         let miCarrito = carritos.find(carrito => carrito.user === user)
         let index = miCarrito.productos.findIndex(producto => producto.id === idProduct) // indice del producto a eliminar
