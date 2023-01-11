@@ -65,7 +65,7 @@ export class CartController {
             await this.cartServices.buyCart( user )
 
             res.redirect('/cart' )
-    
+
         } else {
             res.redirect('/login' )
         }
