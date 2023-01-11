@@ -41,6 +41,7 @@ export class CartServices {
         miCarrito.productos.push({ ...product , title: title , price: price })
 
         const index = carritos.findIndex(carrito => carrito.user === user)
+        console.log('indexCarrito addProduct:' , index )
         if (index == -1) {
             carritos.push(miCarrito)
         } else {
@@ -57,6 +58,8 @@ export class CartServices {
         miCarrito.productos.splice(index,1)            // Elimino el producto del array miCarrito.productos
         index = carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito
         carritos[index] = miCarrito             // Actualizo carritos
+
+        console.log('indexCarrito deleteProduct:' , index )
 
     }
 
