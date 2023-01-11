@@ -50,6 +50,8 @@ export class CartServices {
         } else {
             global.carritos[index] = miCarrito
         }
+        console.log('micarrito addProduct:' , miCarrito )
+        console.log('carritos addProduct:' , global.carritos )
     }
 
     deleteProduct = ( user , idProduct) => {
@@ -60,8 +62,11 @@ export class CartServices {
         miCarrito.total -= miCarrito.productos[index].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
         miCarrito.productos.splice(index,1)            // Elimino el producto del array miCarrito.productos
         index = global.carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito
-        global.carritos[index] = miCarrito             // Actualizo carritos
-
+        if(!miCarrito){
+            global.carritos.splice(index,1)               // si el carrito esta vacio lo elimino de carritos
+        }else{
+            global.carritos[index] = miCarrito             // Actualizo carritos
+        }
         console.log('indexCarrito deleteProduct:' , index )
 
     }
