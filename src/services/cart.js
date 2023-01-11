@@ -2,7 +2,7 @@ import { carritosDao, usuariosDao } from "../model/daos/daosFactory.js"
 import { sendMailNewCart } from "../utils/nodemailer.js"
 
 let instance = null;
-let carritos = []    // aqui se guardan los carritos que esten generando los usuarios
+global.carritos = []    // aqui se guardan los carritos que esten generando los usuarios
 
 export class CartServices {
 
@@ -19,7 +19,7 @@ export class CartServices {
 
         return {
             nombre : (await this.usuariosDao.listar(user))[0].nombre ,
-            carrito : carritos.find(carrito => carrito.user === user),
+            carrito : global.carritos.find(carrito => carrito.user === user),
         }
 
     }
@@ -28,7 +28,7 @@ export class CartServices {
 
         const price = global.productos.find( producto => producto.id === product.id ).price
         const title = global.productos.find( producto => producto.id === product.id ).title
-        let miCarrito = carritos.find(carrito => carrito.user === user)
+        let miCarrito = global.carritos.find(carrito => carrito.user === user)
 
         if ( !miCarrito ) {
             miCarrito = {}
@@ -40,24 +40,24 @@ export class CartServices {
         miCarrito.total +=  Number(product.cantidad) * price
         miCarrito.productos.push({ ...product , title: title , price: price })
 
-        const index = carritos.findIndex(carrito => carrito.user === user)
+        const index = global.carritos.findIndex(carrito => carrito.user === user)
         console.log('indexCarrito addProduct:' , index )
         if (index == -1) {
-            carritos.push(miCarrito)
+            global.carritos.push(miCarrito)
         } else {
-            carritos[index] = miCarrito
+            global.carritos[index] = miCarrito
         }
     }
 
     deleteProduct = ( user , idProduct) => {
 
-        let miCarrito = carritos.find(carrito => carrito.user === user)
+        let miCarrito = global.carritos.find(carrito => carrito.user === user)
         let index = miCarrito.productos.findIndex(producto => producto.id === idProduct) // indice del producto a eliminar
 
         miCarrito.total -= miCarrito.productos[index].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
         miCarrito.productos.splice(index,1)            // Elimino el producto del array miCarrito.productos
-        index = carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito
-        carritos[index] = miCarrito             // Actualizo carritos
+        index = global.carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito
+        global.carritos[index] = miCarrito             // Actualizo carritos
 
         console.log('indexCarrito deleteProduct:' , index )
 
@@ -66,11 +66,11 @@ export class CartServices {
     buyCart = async ( user ) => {
 
         const usuario =  (await this.usuariosDao.listar(user))[0]
-        let miCarrito = carritos.find(carrito => carrito.user === user)
+        let miCarrito = global.carritos.find(carrito => carrito.user === user)
         const guardar = await carritosDao.guardar(miCarrito)
         sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra
-        const index = carritos.findIndex(carrito => carrito.user === user) // Indice de miCarrito
-        carritos.splice(index,1)    // Elimino el carrito completo porque ya se realizo la compra
+        const index = global.carritos.findIndex(carrito => carrito.user === user) // Indice de miCarrito
+        global.carritos.splice(index,1)    // Elimino el carrito completo porque ya se realizo la compra
 
     }
 }
