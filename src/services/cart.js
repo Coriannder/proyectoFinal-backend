@@ -17,9 +17,12 @@ export class CartServices {
 
     getCart = async ( user ) => {
 
+        const carrito = global.carritos.find(carrito => carrito.user === user)
+        console.log("carrito", carrito)
+
         return {
             nombre : (await this.usuariosDao.listar(user))[0].nombre ,
-            carrito : global.carritos.find(carrito => carrito.user === user),
+            carrito : carrito //global.carritos.find(carrito => carrito.user === user),
         }
 
     }
