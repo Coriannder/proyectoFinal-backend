@@ -18,7 +18,7 @@ export class CartServices {
     getCart = async ( user ) => {
 
         const carrito = global.carritos.find(carrito => carrito.user === user)
-        console.log("carrito", carrito)
+        console.log("global.carrito", global.carrito)
 
         return {
             nombre : (await this.usuariosDao.listar(user))[0].nombre ,
@@ -50,7 +50,6 @@ export class CartServices {
         } else {
             global.carritos[index] = miCarrito
         }
-        console.log('micarrito addProduct:' , miCarrito )
         console.log('carritos addProduct:' , global.carritos )
     }
 
