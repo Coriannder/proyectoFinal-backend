@@ -1,9 +1,10 @@
 import config from '../../config/config.js'
 
 let productosDao
-let carritosDao = ''
+let ordenesCompraDao = ''
 let chatDao
 let usuariosDao
+let carritosDao
 
 switch ( config.PERSISTANCE ) {
 
@@ -12,15 +13,17 @@ switch ( config.PERSISTANCE ) {
         const {default: ProductosDaoMongoDb} = await import ('./productos/ProductosDaoMongoDb.js')
         productosDao = ProductosDaoMongoDb.getInstance()
 
-
-        const { default: CarritosDaoMongoDb } = await import ('./carritos/CarritosDaoMongoDb.js')
-        carritosDao = CarritosDaoMongoDb.getInstance()
+        const { default: OrdenesCompraDaoMongoDb } = await import ('./ordenesCompra/ordenCompraDaoMongoDb.js')
+        ordenesCompraDao = OrdenesCompraDaoMongoDb.getInstance()
 
         const { default: ChatDaoMongoDb } = await import ('./chat/ChatDaoMongoDb.js')
         chatDao = ChatDaoMongoDb.getInstance()
 
         const { default: UsuariosDaoMongoDb } = await import ('./usuarios/UsuariosDaoMongoDb.js')
         usuariosDao = UsuariosDaoMongoDb.getInstance()
+
+        const { default: CarritosDaoMongoDb } = await import ('./carritos/carritosDaoMongoDB.js')
+        carritosDao = CarritosDaoMongoDb.getInstance()
 
         break
 
@@ -29,8 +32,8 @@ switch ( config.PERSISTANCE ) {
         const {default: ProductosDaoMemoria} = await import ('./productos/ProductosDaoMemoria.js')
         productosDao = ProductosDaoMemoria.getInstance()
 
-        const { default: CarritosDaoMemoria } = await import ('./carritos/CarritosDaoMemoria.js')
-        carritosDao = CarritosDaoMemoria.getInstance()
+        const { default: OrdenesCompraDaoMemoria } = await import ('./ordenesCompra/ordenesCompraDaoMemoria.js')
+        ordenesCompraDao = OrdenesCompraDaoMemoria.getInstance()
 
         const { default: ChatDaoMemoria } = await import ('./chat/ChatDaoMemoria.js')
         chatDao = ChatDaoMemoria.getInstance()
@@ -38,8 +41,11 @@ switch ( config.PERSISTANCE ) {
         const { default: UsuariosDaoMemoria } = await import ('./usuarios/UsuariosDaoMemoria.js')
         usuariosDao = UsuariosDaoMemoria.getInstance()
 
+        const { default: CarritosDaoMemoria } = await import ('./carritos/carritosDaoMemoria.js')
+        carritosDao = CarritosDaoMemoria.getInstance()
+
         break
 }
 
-export { productosDao, carritosDao, chatDao, usuariosDao }
+export { productosDao, ordenesCompraDao, chatDao, usuariosDao, carritosDao }
 

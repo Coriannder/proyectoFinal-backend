@@ -1,13 +1,15 @@
-import { carritosDao, usuariosDao } from "../model/daos/daosFactory.js"
+import { ordenesCompraDao, usuariosDao, carritosDao } from "../model/daos/daosFactory.js"
 import { sendMailNewCart } from "../utils/nodemailer.js"
 
 let instance = null;
-global.carritos = []    // aqui se guardan los carritos que esten generando los usuarios
+//global.carritos = []    // aqui se guardan los carritos que esten generando los usuarios
 
 export class CartServices {
 
     constructor(){
         this.usuariosDao = usuariosDao
+        this.ordenesCompraDao = ordenesCompraDao
+        this.carritosDao = carritosDao
     }
 
     static getInstance = () => {
@@ -17,67 +19,80 @@ export class CartServices {
 
     getCart = async ( user ) => {
 
-        const carrito = global.carritos.find(carrito => carrito.user === user)
-        console.log("global.carrito", global.carrito)
+        const carritos = await this.carritosDao.listarAll() /* global.carritos.find(carrito => carrito.user === user) */
+        const miCarrito = carritos.find( carrito => carrito.user === user )
+        console.log("getCart", miCarrito)
 
         return {
             nombre : (await this.usuariosDao.listar(user))[0].nombre ,
-            carrito : carrito //global.carritos.find(carrito => carrito.user === user),
+            carrito : miCarrito || {} //global.carritos.find(carrito => carrito.user === user),
         }
 
     }
 
-    addProduct = ( user , product ) => {
+    addProduct = async ( user , product ) => {
 
         const price = global.productos.find( producto => producto.id === product.id ).price
         const title = global.productos.find( producto => producto.id === product.id ).title
-        let miCarrito = global.carritos.find(carrito => carrito.user === user)
+
+        //et miCarrito = global.carritos.find(carrito => carrito.user === user)
+
+        const miCarrito = await getCart(user).carrito
+
+        /* const carritos = await this.carritosDao.listarAll()
+        const miCarrito = carritos.find( carrito => carrito.user === user ) */
 
         if ( !miCarrito ) {
-            miCarrito = {}
+            //miCarrito = {}
             miCarrito.user = user
             miCarrito.productos = []
             miCarrito.total = 0
+            miCarrito = await this.carritosDao.guardar(miCarrito)
+            console.log('miCArrito guardado' , miCarrito)
         }
 
         miCarrito.total +=  Number(product.cantidad) * price
         miCarrito.productos.push({ ...product , title: title , price: price })
 
-        const index = global.carritos.findIndex(carrito => carrito.user === user)
+/*         const index = carritos.findIndex(carrito => carrito.user === user)
         console.log('indexCarrito addProduct:' , index )
         if (index == -1) {
-            global.carritos.push(miCarrito)
+            carritos.push(miCarrito)
         } else {
-            global.carritos[index] = miCarrito
-        }
-        console.log('carritos addProduct:' , global.carritos )
+            carritos[index] = miCarrito
+        } */
+
+        this.carritosDao.actualizar(miCarrito.id)
     }
 
-    deleteProduct = ( user , idProduct) => {
+    deleteProduct = async ( user , idProduct) => {
 
-        let miCarrito = global.carritos.find(carrito => carrito.user === user)
+        let miCarrito = await getCart(user).carrito //global.carritos.find(carrito => carrito.user === user)
         let index = miCarrito.productos.findIndex(producto => producto.id === idProduct) // indice del producto a eliminar
 
         miCarrito.total -= miCarrito.productos[index].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
         miCarrito.productos.splice(index,1)            // Elimino el producto del array miCarrito.productos
-        index = global.carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito
-        if(!miCarrito){
-            global.carritos.splice(index,1)               // si el carrito esta vacio lo elimino de carritos
-        }else{
-            global.carritos[index] = miCarrito             // Actualizo carritos
-        }
-        console.log('indexCarrito deleteProduct:' , index )
 
+        /* index = global.carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito */
+
+        if(!miCarrito.productos){
+            /* global.carritos.splice(index,1)               // si el carrito esta vacio lo elimino de carritos */
+            await this.carritosDao.borrar(miCarrito.id)
+        }else{
+            await this.carritosDao.actualizar(miCarrito.id)             // Actualizo carritos
+        }
     }
 
     buyCart = async ( user ) => {
 
         const usuario =  (await this.usuariosDao.listar(user))[0]
-        let miCarrito = global.carritos.find(carrito => carrito.user === user)
-        const guardar = await carritosDao.guardar(miCarrito)
+        let miCarrito = this.getCart(user).carrito //global.carritos.find(carrito => carrito.user === user)
+        const guardar = await ordenesCompraDao.guardar(miCarrito)
         sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra
-        const index = global.carritos.findIndex(carrito => carrito.user === user) // Indice de miCarrito
-        global.carritos.splice(index,1)    // Elimino el carrito completo porque ya se realizo la compra
+        await this.carritosDao.borrar(miCarrito.id)        // Elimino el carrito completo porque ya se realizo la compra
+
+        /* const index = global.carritos.findIndex(carrito => carrito.user === user) // Indice de miCarrito
+        global.carritos.splice(index,1)    // Elimino el carrito completo porque ya se realizo la compra */
 
     }
 }

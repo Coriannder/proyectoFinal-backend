@@ -1,6 +1,6 @@
 import UsuarioDto from "./usuarioDto.js"
 import ProductoDto from "./productoDto.js"
-import CarritoDto from "./carritoDto.js"
+import CarritoDto from "./ordenesCompraDto.js"
 import ChatDto from "./chatDto.js"
 
 
