@@ -25,7 +25,7 @@ export class CartServices {
 
         return {
             nombre : (await this.usuariosDao.listar(user))[0].nombre ,
-            carrito : miCarrito || {} //global.carritos.find(carrito => carrito.user === user),
+            carrito : miCarrito //global.carritos.find(carrito => carrito.user === user),
         }
 
     }
@@ -37,7 +37,7 @@ export class CartServices {
 
         //et miCarrito = global.carritos.find(carrito => carrito.user === user)
 
-        const miCarrito = await getCart(user).carrito
+        const miCarrito = await this.getCart(user).carrito
 
         /* const carritos = await this.carritosDao.listarAll()
         const miCarrito = carritos.find( carrito => carrito.user === user ) */
@@ -67,10 +67,10 @@ export class CartServices {
 
     deleteProduct = async ( user , idProduct) => {
 
-        let miCarrito = await getCart(user).carrito //global.carritos.find(carrito => carrito.user === user)
+        let miCarrito = await this.getCart(user).carrito //global.carritos.find(carrito => carrito.user === user)
         let index = miCarrito.productos.findIndex(producto => producto.id === idProduct) // indice del producto a eliminar
 
-        miCarrito.total -= miCarrito.productos[index].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
+        miCarrito.total -= miCarrito.productos[indeclsx].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
         miCarrito.productos.splice(index,1)            // Elimino el producto del array miCarrito.productos
 
         /* index = global.carritos.findIndex(carrito => carrito.user === user)  // indice de miCarrito */
