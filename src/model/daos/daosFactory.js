@@ -41,7 +41,7 @@ switch ( config.PERSISTANCE ) {
         const { default: UsuariosDaoMemoria } = await import ('./usuarios/UsuariosDaoMemoria.js')
         usuariosDao = UsuariosDaoMemoria.getInstance()
 
-        const { default: CarritosDaoMemoria } = await import ('./carritos/carritosDaoMemoria.js')
+        const { default: CarritosDaoMemoria } = await import ('./carritos/CarritosDaoMemoria.js')
         carritosDao = CarritosDaoMemoria.getInstance()
 
         break
