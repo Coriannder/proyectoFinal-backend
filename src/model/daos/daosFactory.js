@@ -13,7 +13,7 @@ switch ( config.PERSISTANCE ) {
         const {default: ProductosDaoMongoDb} = await import ('./productos/ProductosDaoMongoDb.js')
         productosDao = ProductosDaoMongoDb.getInstance()
 
-        const { default: OrdenesCompraDaoMongoDb } = await import ('./ordenesCompra/ordenCompraDaoMongoDb.js')
+        const { default: OrdenesCompraDaoMongoDb } = await import ('./ordenesCompra/ordenesCompraDaoMongoDb.js')
         ordenesCompraDao = OrdenesCompraDaoMongoDb.getInstance()
 
         const { default: ChatDaoMongoDb } = await import ('./chat/ChatDaoMongoDb.js')

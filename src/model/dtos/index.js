@@ -1,7 +1,8 @@
 import UsuarioDto from "./usuarioDto.js"
 import ProductoDto from "./productoDto.js"
-import CarritoDto from "./ordenesCompraDto.js"
+import CarritoDto from "./carritoDto.js"
 import ChatDto from "./chatDto.js"
+import OrdenCompraDto from "./ordenCompraDto.js"
 
 
 export default class Dto {
@@ -20,7 +21,7 @@ export default class Dto {
                 objectAsDto = UsuarioDto.asDto(object)
                 break
 
-            case 'carritos':
+            case 'Carritos':
                 objectAsDto = CarritoDto.asDto(object)
                 break
 
@@ -32,7 +33,11 @@ export default class Dto {
                 objectAsDto = ChatDto.asDto(object)
                 break
 
-            default: return 'error'
+            case 'OrdenesCompra':
+                objectAsDto = OrdenCompraDto.asDto(object)
+                break
+
+            default: return 'papa'
         }
 
         return objectAsDto

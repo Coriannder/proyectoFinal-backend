@@ -4,7 +4,7 @@ let instance = null;
 class OrdenesCompraDaoMongoDb extends ContenedorMongoDb {
 
     constructor () {
-        super('ordenesCompra', {
+        super('OrdenesCompra', {
             total: { type: Number , required: true },
             productos: { type: [], required: true },
             user: {type: String, required: true}

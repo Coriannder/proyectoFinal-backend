@@ -5,7 +5,7 @@ let instance = null;
 class OrdenesCompraDaoMemoria extends ContenedorMemoria {
 
     constructor () {
-        super('ordenesCompra')
+        super('OrdenesCompra')
     }
 
     static getInstance() {

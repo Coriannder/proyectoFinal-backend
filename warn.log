@@ -165,3 +165,11 @@
   },
   _message: 'Usuarios validation failed'
 }
+[2023-01-12T20:51:30.859] [ERROR] default - Error: Invalid atomic update value for $set. Expected an object, received undefined
+    at castUpdate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\query\castUpdate.js:98:13)
+    at model.Query._castUpdate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5110:10)
+    at model.Query._updateThunk (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4249:27)
+    at model.Query.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4363:23)
+    at model.Query._wrappedThunk [as _updateOne] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\kareem\index.js:494:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)

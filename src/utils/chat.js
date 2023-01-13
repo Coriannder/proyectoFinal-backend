@@ -12,7 +12,7 @@ export const chatWebsocket = (httpServer) => {
         console.log('Nuevo cliente conectado!')
 
         /* Envio los mensajes al cliente que se conectó */
-        const chatArray = await chatServices.getAllChat()
+        let chatArray = await chatServices.getAllChat()
         socket.emit('messages', chatArray)
 
 
@@ -20,15 +20,10 @@ export const chatWebsocket = (httpServer) => {
         socket.on('newMessage', async res =>{
 
             const message = await chatServices.saveNewMessage(res)
-            chatArray.push(message)
+            chatArray = await chatServices.getAllChat()
             io.sockets.emit('messages', chatArray)
         })
     })
 
     return io
 }
-
-
-
-
-
