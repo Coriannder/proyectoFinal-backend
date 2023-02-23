@@ -19,9 +19,9 @@ class ContenedorMemoria {
 
         let newId
         if (this.elementos.length == 0) {
-            newId = 1
+            newId = '1'
         } else {
-            newId = this.elementos[this.elementos.length - 1].id + 1
+            newId = (Number(this.elementos[this.elementos.length - 1].id) + 1).toString()
         }
 
         const newElem = { ...elem, id: newId }
@@ -29,14 +29,17 @@ class ContenedorMemoria {
         return this.dto.transform(newElem)
     }
 
-    async actualizar(elem) {
-        const newElem = { ...elem, id: Number(elem.id) }
-        const index = this.elementos.findIndex(p => p.id == elem.id)
+    async actualizar(id , elemento) {
+        const index = this.elementos.findIndex(p => p.id == id)
         if (index == -1) {
             return false
         } else {
-            this.elementos[index] = newElem
-            return this.dto.transform(newElem)
+
+            const keys = Object.keys(elemento)
+            for( let i = 0 ; i < keys.length ; i++ ){
+                (this.elementos[index])[keys[i]] = elemento[keys[i]]
+            }
+            return true
         }
     }
 

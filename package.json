@@ -29,5 +29,8 @@
     "socket.io": "^4.5.4",
     "yargs": "^17.6.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
 }

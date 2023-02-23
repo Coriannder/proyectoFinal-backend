@@ -17,7 +17,7 @@ export class RegisterServices {
 	}
 
     saveNewUser = async ( newUser ) => {
-       
+
             let response = {}
             const usuarios = await usuariosDao.listarAll()
             newUser.password = createHash(newUser.password)

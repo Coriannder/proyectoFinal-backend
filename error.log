@@ -119,3 +119,35 @@
     at model.Query._wrappedThunk [as _updateOne] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
     at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\kareem\index.js:494:25
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-02-22T09:19:46.317] [ERROR] default - Error: No recipients defined
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._setEnvelope (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1007:34)
+    at SMTPConnection.send (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:621:14)
+    at sendMessage (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-transport\index.js:228:28)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-transport\index.js:286:25
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1556:9)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2023-02-22T09:23:36.066] [ERROR] default - Error: No recipients defined
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._setEnvelope (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1007:34)
+    at SMTPConnection.send (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:621:14)
+    at sendMessage (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-transport\index.js:228:28)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-transport\index.js:286:25
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1556:9)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
+[2023-02-22T10:46:48.986] [ERROR] default - ReferenceError: user is not defined
+    at mailOptionsNewCart (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/nodemailer.js:65:59)
+    at sendMailNewCart (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/nodemailer.js:92:53)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

@@ -1,19 +1,23 @@
 import * as dotenv from 'dotenv'
 dotenv.config()
-import { NODE_ENV , PERSISTANCE , PORT } from '../utils/yargs.js'
+import { NODE_ENV , PERSISTANCE , PORT , SESSIONTIME } from '../utils/yargs.js'
 
 let persistance
 let port
 let node_env
+const sessionTime = Number(process.env.SESSIONTIME || SESSIONTIME)*60000
 
 if(NODE_ENV === 'production'){
     persistance = 'mongo'
     port = 8083
     node_env = NODE_ENV
+    
 } else {
     persistance = PERSISTANCE
     port = PORT
 }
+
+
 
 export default {
 
@@ -23,6 +27,7 @@ export default {
     URL_MONGO: process.env.URL_MONGO,
     SECRET_SESSION_MONGO: process.env.SECRET_SESSION_MONGO,
     USER_MAILADMIN: process.env.USER_MAILADMIN,
-    PASS_MAILADMIN: process.env.PASS_MAILADMIN
+    PASS_MAILADMIN: process.env.PASS_MAILADMIN,
+    SESSIONTIME: sessionTime
 
 }

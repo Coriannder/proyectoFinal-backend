@@ -23,10 +23,7 @@ export class RegisterController {
             password: req.body.password,
             phone: req.body.telefono
         }
-        console.log('req.body' , req.body)
         const response = await this.registerServices.saveNewUser( newUser )
-        console.log('response register' , response)
-
         if(response.error){
             req.session.message = response.message
             req.session.route = response.route
