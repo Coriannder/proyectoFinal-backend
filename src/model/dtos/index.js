@@ -37,7 +37,7 @@ export default class Dto {
                 objectAsDto = OrdenCompraDto.asDto(object)
                 break
 
-            default: return 'papa'
+            default: return ''
         }
 
         return objectAsDto

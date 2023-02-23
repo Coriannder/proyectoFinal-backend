@@ -18,6 +18,7 @@ export class CartServices {
     getCart = async ( user ) => {
 
         const carritos = await this.carritosDao.listarAll()
+
         let miCarrito = carritos.find( carrito => carrito.user === user )
 
         if ( !miCarrito ) {
@@ -32,7 +33,6 @@ export class CartServices {
             nombre : (await this.usuariosDao.listar(user))[0].nombre ,
             carrito : miCarrito //global.carritos.find(carrito => carrito.user === user),
         }
-
     }
 
     addProduct = async ( user , product ) => {
@@ -41,17 +41,15 @@ export class CartServices {
         const title = global.productos.find( producto => producto.id === product.id ).title
 
         const miCarrito = (await this.getCart(user)).carrito
-        miCarrito.total +=  Number(product.cantidad) * price
+        miCarrito.total +=  Number(product.cantidad) * Number(price)
 
         const index = miCarrito.productos.findIndex(producto => producto.id === product.id) // Indice del producto
-
         index === -1 ?
             miCarrito.productos.push({ ...product , title: title , price: price })
             :
             miCarrito.productos[index].cantidad = Number(miCarrito.productos[index].cantidad) + Number( product.cantidad)
 
-        await this.carritosDao.actualizar(miCarrito.id , {user: miCarrito.user, productos: miCarrito.productos, total: miCarrito.total})
-
+        await this.carritosDao.actualizar(miCarrito.id , {user: miCarrito.user, productos: miCarrito.productos, total: miCarrito.total })
     }
 
 

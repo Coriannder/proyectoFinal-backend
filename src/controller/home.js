@@ -17,6 +17,7 @@ export class HomeController {
         if(req.isAuthenticated()){
             const user = req.session.passport.user
             const products = await this.homeServices.getUserNameAndProducts(user)
+            
             res.render('pages/home', {
                 ...products,
                 active: 'home' //pestana activa de NAVBAR

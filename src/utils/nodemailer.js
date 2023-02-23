@@ -11,35 +11,60 @@ const transporter = createTransport({
     }
 });
 
-export const sendMailNewUser = async ( newUser ) => {
 
 
-    const mailOptions = {
+
+const mailOptionsNewUser = (addressee, user) => {
+    
+    return {
         from: 'Servidor Node.js',
-        to: config.USER_MAILADMIN,
+        to: addressee === 'admin' ?  config.USER_MAILADMIN : user.email,
         subject: 'Nuevo Usuario',
         html:
-        `<h1 style="color: blue;">Nuevo usuario registrado</h1>'
+        `<h1 style="color: blue;">${addressee === 'admin' ? 'Nuevo usuario registrado' : 'Te registraste correctamente'}</h1>'
         <div>
             <ul>
-                <li>NOMBRE: <span style="color: green;"> ${newUser.nombre}</span></li>
-                <li>DIRECCION: <span style="color: green;">${newUser.direccion}</span></li>
-                <li>EDAD: <span style="color: green;">${newUser.edad}</span></li>
-                <li>TELEFONO: <span style="color: green;">${newUser.phone}</span></li>
-                <li>EMAIL: <span style="color: green;">${newUser.email}</span></li>
-                <li>Foto de perfil:   <img src="cid:photo" width="100" height="100"/></li>
+                <li>NOMBRE: <span style="color: green;"> ${user.nombre}</span></li>
+                <li>DIRECCION: <span style="color: green;">${user.direccion}</span></li>
+                <li>EDAD: <span style="color: green;">${user.edad}</span></li>
+                <li>TELEFONO: <span style="color: green;">${user.phone}</span></li>
+                <li>EMAIL: <span style="color: green;">${user.email}</span></li>
             </ul>
         </div>`
     }
 
+}
+
+
+export const sendMailNewUser = async ( newUser ) => {
+
     try {
-        const info = await transporter.sendMail(mailOptions)
-        logger.info('mail enviado' , info)
+        /* const infoAdmin = await transporter.sendMail( mailOptionsNewUser('admin', newUser))
+        const infoNewUser = await transporter.sendMail(mailOptionsNewUser('user', newUser))
+        logger.info('mail enviado al Admin' , infoAdmin)
+        logger.info('mail enviado al nuevo usuario' , infoNewUser)
+
+        console.log( 'mailOptionsNewUser', mailOptionsNewUser('admin', newUser)) */
+
+
+
     } catch (err) {
         logger.error(err)
     }
 
 }
+
+const mailOptionsNewCart = (addressee , nombre , email , total, lista ) => {
+    return  {
+    from: 'Servidor Node.js',
+    to:  addressee === 'admin' ?  config.USER_MAILADMIN : email,
+    subject: addressee === 'admin' ?  'Nuevo pedido de ' + nombre : 'Pedido realizado con exito',
+    html: `<h1 style="color: blue;"> Nueva compra del usuario: <span style="color: green;"> ${email} </span></h1><div><ul>`
+    + lista + `<h2>Total $ ${total} </h2></ul><div>`
+    }
+   
+}
+
 
 export const sendMailNewCart = async ( nombre, email, cart ) => {
 
@@ -48,17 +73,15 @@ export const sendMailNewCart = async ( nombre, email, cart ) => {
             listaProductosCarrito +=`<li>${element.title}   $${element.price} x ${element.cantidad}</li>`
             });
 
-    const mailOptions = {
-        from: 'Servidor Node.js',
-        to: config.USER_MAILADMIN,
-        subject: 'nuevo pedido de ' + nombre ,
-        html: `<h1 style="color: blue;">Nueva compra del usuario: <span style="color: green;"> ${email} </span></h1><div><ul>` 
-        + listaProductosCarrito + `<h2>Total $ ${cart.total} </h2></ul><div>`
-    }
-
     try {
-        const info = await transporter.sendMail(mailOptions)
-        logger.info('mail enviado' , info)
+
+        const infoAdmin = await transporter.sendMail(mailOptionsNewCart('admin', nombre, email, cart.total, listaProductosCarrito))
+        const infoUser = await transporter.sendMail(mailOptionsNewCart('user', nombre, email, cart.total, listaProductosCarrito))
+        logger.info('mail enviado al Admin' , infoAdmin)
+        logger.info('mail enviado al Usuario' , infoUser)
+
+        console.log( mailOptionsNewCart , mailOptionsNewCart('admin', nombre, email, cart.total, listaProductosCarrito) )
+
     } catch (err) {
         logger.error(err)
     }

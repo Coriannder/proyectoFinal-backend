@@ -9,22 +9,28 @@ import {  RegisterRouter } from './routes/register.js'
 import { ErrorRouter } from './routes/error.js'
 import { HomeRouter } from './routes/home.js'
 import { RouterCart } from './routes/cart.js'
+import { RouterChat } from './routes/chat.js'
+import { ConfigRouter } from './routes/config.js'
+import { RouterProductos } from './routes/productos.js'
 import cluster from 'cluster'
 import { cpus } from 'os'
 import { logger } from './utils/logger.js'
 import { mode } from './utils/yargs.js'
 import { LogoutRouter } from './routes/logout.js'
 import { chatWebsocket } from './utils/chat.js'
-import { RouterChat } from './routes/chat.js'
 import cors from 'cors'
-import { ConfigRouter } from './routes/config.js'
-
-//import config from './config/config.js'
+import { productosDao  } from './model/daos/daosFactory.js'
+import { createManyProducts } from './mocks/productosMocks.js'
 
 console.log('config.PERSISTANCE' , config.PERSISTANCE)
 
+// Mockeo 5 productos para trabajar en memoria
+if( config.PERSISTANCE === 'memoria') createManyProducts(5).forEach(async elem => { const pp = await productosDao.guardar(elem)})
+
+
 
 const app = express()
+
 const httpServer = new HttpServer(app)
 
 app.use(express.json())
@@ -54,6 +60,7 @@ app.use( '/home' , HomeRouter.start() )
 app.use( '/cart' , RouterCart.start() )
 app.use( '/chat' , RouterChat.start() )
 app.use( '/config' , ConfigRouter.start())
+app.use( '/products' , RouterProductos.start())
 
 app.get('*', (req, res) => {
     res.redirect('/login')
