@@ -15,7 +15,6 @@ const transporter = createTransport({
 
 
 const mailOptionsNewUser = (addressee, user) => {
-    
     return {
         from: 'Servidor Node.js',
         to: addressee === 'admin' ?  config.USER_MAILADMIN : user.email,
@@ -62,7 +61,7 @@ const mailOptionsNewCart = (addressee , nombre , email , total, lista ) => {
     html: `<h1 style="color: blue;"> Nueva compra del usuario: <span style="color: green;"> ${email} </span></h1><div><ul>`
     + lista + `<h2>Total $ ${total} </h2></ul><div>`
     }
-   
+
 }
 
 
@@ -87,6 +86,3 @@ export const sendMailNewCart = async ( nombre, email, cart ) => {
     }
 
 }
-
-
-
