@@ -28,8 +28,7 @@ passport.deserializeUser( async (id, done) => {
     done(null, await usuariosDao.listar(id))
 })
 
-
 export const authenticate = passport.authenticate('login',{
     successRedirect: '/home',
     failureRedirect: '/error'
-  })
+})

@@ -1,5 +1,3 @@
-
-
 export default class UsuarioDto {
 
     constructor(usuario) {

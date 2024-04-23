@@ -4,19 +4,18 @@ import CarritoDto from "./carritoDto.js"
 import ChatDto from "./chatDto.js"
 import OrdenCompraDto from "./ordenCompraDto.js"
 
-
 export default class Dto {
 
     constructor( typeDto ){
         this.typeDto = typeDto
     }
 
-
     transform = (object) => {
 
         let objectAsDto
 
         switch(this.typeDto) {
+
             case 'Usuarios':
                 objectAsDto = UsuarioDto.asDto(object)
                 break

@@ -5,7 +5,6 @@ faker.locale = 'es'
 let idProduct = 0
 let idMesagge = 0
 
-
 export const createManyProducts = (cant) => {
     let result = []
     for(let i = 0 ; i < cant ; i++ ) {
@@ -13,7 +12,6 @@ export const createManyProducts = (cant) => {
     }
     return result;
 }
-
 const createProduct = () => {
     idProduct++
     return {
@@ -23,7 +21,6 @@ const createProduct = () => {
         thumbnail: faker.image.abstract( 640 , 480 , true)
     }
 }
-
 
 export const createManyMesagges = (cant) => {
     let result = []

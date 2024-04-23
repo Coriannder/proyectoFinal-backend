@@ -11,16 +11,12 @@ if(NODE_ENV === 'production'){
     persistance = 'mongo'
     port = 8083
     node_env = NODE_ENV
-    
 } else {
     persistance = PERSISTANCE
     port = PORT
 }
 
-
-
 export default {
-
     NODE_ENV: NODE_ENV,
     PERSISTANCE: persistance || process.env.PERSISTANCE,
     PORT: port || process.env.PORT,
@@ -29,5 +25,4 @@ export default {
     USER_MAILADMIN: process.env.USER_MAILADMIN,
     PASS_MAILADMIN: process.env.PASS_MAILADMIN,
     SESSIONTIME: sessionTime
-
 }

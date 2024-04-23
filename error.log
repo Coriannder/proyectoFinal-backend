@@ -151,3 +151,21 @@
     at mailOptionsNewCart (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/nodemailer.js:65:59)
     at sendMailNewCart (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/nodemailer.js:92:53)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-15T23:36:23.195] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials x9-20020a170902ec8900b001e4fdcf67desm8588437plg.299 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials x9-20020a170902ec8900b001e4fdcf67desm8588437plg.299 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}

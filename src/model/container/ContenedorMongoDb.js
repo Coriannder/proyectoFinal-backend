@@ -12,7 +12,6 @@ await  mongoose.connect(config.URL_MONGO, {
 .then(() => logger.info('Base de datos MONGO conectada'))
 .catch(err => logger.error("Base de datos MONGO no conectada"))
 
-
 class ContenedorMongoDb {
     constructor (nombreCollection, squema) {
         this.collection = mongoose.model(nombreCollection, squema)
@@ -22,7 +21,6 @@ class ContenedorMongoDb {
     async listar(id) {
         try {
             const res = await this.collection.find({_id: id})
-
             return  this.dto.transform(transformMongoObject(res))
         } catch (error) {
             logger.error(error)
