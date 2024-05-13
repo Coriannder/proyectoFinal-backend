@@ -1,5 +1,5 @@
 
-import { LoginServices } from "../services/login.js"
+import { LoginServices } from "../services/login.js";
 
 
 let instance = null
@@ -13,21 +13,18 @@ export class LoginController {
 		return instance;
 	}
 
-    postLogin = async (req, res, next) => {
-
-        const email = req.body.username
-        const password = req.body.password
-
-        const response = this.loginServices.autenticar( email , password)
-
-        req.session.message = response.message
-        req.session.route = response.route
-
-        next();
+    getLogin = (req, res) => {
+        res.render('pages/login', {invalidCredentials: false})
     }
 
-    getLogin = (req, res) => {
-        res.render('pages/login')
+    getLoginError= (req, res) => {
+        res.render('pages/login', {invalidCredentials: true})
+    }
+
+    postLogin = async (req, res) => {
+        const { email , password } = req.body
+        const token = await this.loginServices.getToken( email , password )
+        return res.json(token)
     }
 }
 

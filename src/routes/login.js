@@ -1,7 +1,6 @@
 import { Router } from 'express'
 import { LoginController } from '../controller/login.js'
-import { authenticate } from '../middleware/passport.js';
-
+import { usuariosDao } from '../model/daos/daosFactory.js';
 
 
 const login = Router();
@@ -12,7 +11,21 @@ export class LoginRouter {
     static start() {
 
         login.get('/' ,  loginController.getLogin)
-        login.post('/' , loginController.postLogin, authenticate )
+        login.get('/error' ,  loginController.getLoginError)
+        login.post('/' , loginController.postLogin)
+
+        login.get('/guardar' , async (req, res) => {
+            const resul = await usuariosDao.guardar()
+            console.log('res----------------' , resul)
+            res.json(resul)
+        })
+
+
+         /* login.get('/auth' , authenticate , (req, res )=>{
+            console.log('req-----------------------' , req.body)
+            res.json('/home')
+        } ) */
+
 
         return login
     }

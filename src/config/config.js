@@ -5,7 +5,7 @@ import { NODE_ENV , PERSISTANCE , PORT , SESSIONTIME } from '../utils/yargs.js'
 let persistance
 let port
 let node_env
-const sessionTime = Number(process.env.SESSIONTIME || SESSIONTIME)*60000
+const sessionTime = Number(SESSIONTIME || process.env.SESSIONTIME)*60000
 
 if(NODE_ENV === 'production'){
     persistance = 'mongo'
@@ -24,5 +24,6 @@ export default {
     SECRET_SESSION_MONGO: process.env.SECRET_SESSION_MONGO,
     USER_MAILADMIN: process.env.USER_MAILADMIN,
     PASS_MAILADMIN: process.env.PASS_MAILADMIN,
-    SESSIONTIME: sessionTime
+    SESSIONTIME: sessionTime,
+    SECRET_JWT: process.env.SECRET_JWT
 }

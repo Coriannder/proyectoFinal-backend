@@ -16,6 +16,24 @@ export class RegisterServices {
 		return instance;
 	}
 
+
+    post = async ( email , password ) => {
+        const users = await usuariosDao.listarAll()
+        const userFound = users.find(user => user.email === email)
+
+        if(userFound) return {message: 'El email ya se encuentra registrado'}
+
+        const passwordHash = createHash(password)
+        const isRegistered = await usuariosDao.guardar( { email: email , password: passwordHash })
+
+        if(!isRegistered.id) return {message: "Error de registro"}
+        return {message: "Registro correcto" , userId: isRegistered.id}
+    }
+
+
+
+
+
     saveNewUser = async ( newUser ) => {
 
             let response = {}

@@ -15,12 +15,16 @@ export class ErrorController{
 
     getError = (req, res ) => {
 
-        const route = req.session.route
-        res.render('pages/error' , {
-            message: req.session.message || 'Error',
-            route: req.session.route || 'login'
-        })
-        req.session.destroy()
+        //const {message , route } = req.body
+
+        res.send(req.body)
+
+        //const route = req.session.route
+        /* res.render('pages/error' , {
+            message: message,
+            route: route
+        }) */
+        //req.session.destroy()
     }
 }
 

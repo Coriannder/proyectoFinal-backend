@@ -1,7 +1,11 @@
-import passport from 'passport'
+/* import passport from 'passport'
 import { usuariosDao } from '../model/daos/daosFactory.js'
 import  { Strategy as LocalStrategy } from 'passport-local'
 import { isValidPassword } from '../utils/crypt.js'
+
+import  { Strategy as JwtStrategy } from 'passport-jwt'
+
+
 
 
 passport.use('login' , new LocalStrategy( async ( username , password , done) => {
@@ -31,4 +35,4 @@ passport.deserializeUser( async (id, done) => {
 export const authenticate = passport.authenticate('login',{
     successRedirect: '/home',
     failureRedirect: '/error'
-})
+}) */

@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { RegisterController } from '../controller/register.js';
+//import passport from 'passport';
 
 
 const register = Router();
@@ -10,7 +11,8 @@ export class  RegisterRouter {
     static start(){
 
         register.get('/', registerController.render )
-        register.post('/', registerController.saveNewUser )
+        register.get('/error', registerController.renderError )
+        register.post('/', registerController.post )
 
         return register
 

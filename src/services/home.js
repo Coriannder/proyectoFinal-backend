@@ -14,15 +14,15 @@ export class HomeServices {
 		return instance;
 	}
 
-    getUserNameAndProducts = async (user) => {
+    getUserNameAndProducts = async (id) => {
 
-        const nombre = (await this.usuariosDao.listar(user))[0].nombre
-        global.filterChat = (await this.usuariosDao.listar(user))[0].email
+        const nombre = await this.usuariosDao.listar(id)
+        global.filterChat = (await this.usuariosDao.listar(id)).email
         global.productos = await this.productosDao.listarAll()
 
         return {
-            nombre: nombre ,
-            productos: global.productos ,
+            nombre: nombre.nombre ,
+            products: global.productos ,
         }
     }
 }

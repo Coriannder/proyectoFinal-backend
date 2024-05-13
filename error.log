@@ -169,3 +169,1195 @@
   responseCode: 535,
   command: 'AUTH PLAIN'
 }
+[2024-04-23T18:36:05.464] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials lw4-20020a056a00750400b006ea9108ec12sm10067851pfb.115 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials lw4-20020a056a00750400b006ea9108ec12sm10067851pfb.115 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-23T18:38:15.897] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d12-20020a63360c000000b005d880b41598sm9606318pga.94 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials d12-20020a63360c000000b005d880b41598sm9606318pga.94 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-23T18:46:14.229] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials c18-20020a63d512000000b005dc49afed53sm9960169pgg.55 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials c18-20020a63d512000000b005dc49afed53sm9960169pgg.55 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-23T18:58:48.984] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials u9-20020a170902e80900b001e7c05cf1a2sm10523768plg.112 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials u9-20020a170902e80900b001e7c05cf1a2sm10523768plg.112 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-23T19:11:10.948] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i9-20020a17090332c900b001e3cfb853a2sm10552766plr.183 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials i9-20020a17090332c900b001e3cfb853a2sm10552766plr.183 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-23T19:12:15.036] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials l6-20020a639846000000b005f0793db2ebsm191521pgo.74 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials l6-20020a639846000000b005f0793db2ebsm191521pgo.74 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-24T11:05:52.844] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials jj1-20020a170903048100b001e2526a5cc3sm11915161plb.307 - gsmtp
+    at SMTPConnection._formatError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. For more information, go to\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials jj1-20020a170903048100b001e2526a5cc3sm11915161plb.307 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2024-04-25T15:49:36.628] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got lio@messi.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:00:29.199] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got pela@pela.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:03:56.761] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got lio@messi.com.ar
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:05:22.639] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got ana@ana.ar
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:06:20.832] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got rere@re.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:17:10.877] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got taboadario@hotmail.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:17:51.604] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got taboadario@hotmail.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:24:40.537] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got taboadario@hotmail.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T16:25:34.667] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got taboadario@hotmail.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-25T17:46:06.869] [ERROR] default - MongoServerError: E11000 duplicate key error collection: test.usuarios index: email_1 dup key: { email: "pela@pela.com" }
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connection_pool.js:307:25
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\sdam\server.js:213:17
+    at handleOperationResult (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\sdam\server.js:329:20)
+    at Connection.onMessage (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connection.js:242:9)
+    at MessageStream.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'pela@pela.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-04-25T18:02:33.773] [ERROR] default - MongoServerError: E11000 duplicate key error collection: test.usuarios index: email_1 dup key: { email: "sebastiantaboada.bm@gmail.com" }
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\operations\insert.js:53:33
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connection_pool.js:307:25
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\sdam\server.js:213:17
+    at handleOperationResult (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\sdam\server.js:329:20)
+    at Connection.onMessage (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connection.js:242:9)
+    at MessageStream.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'sebastiantaboada.bm@gmail.com' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-04-29T16:59:40.359] [ERROR] default - CastError: Cast to ObjectId failed for value "662d6b67f421aee623daa55" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"662d6b67f421aee623daa55"',
+  kind: 'ObjectId',
+  value: '662d6b67f421aee623daa55',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-04-29T19:49:06.445] [ERROR] default - ObjectParameterError: Parameter "obj" to Document() must be an object, got Angel@dimaria.com
+    at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:113:11)
+    at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3221:15
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+[2024-04-29T19:51:49.601] [ERROR] default - Error: Usuarios validation failed: password: Path `password` is required.
+    at ValidationError.inspect (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:790:19)
+    at inspect (node:internal/util/inspect:350:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2241:40)
+    at Object.format (node:internal/util/inspect:2098:10)
+    at basicLayout (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    password: ValidatorError: Path `password` is required.
+        at validate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:2903:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'password',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Usuarios validation failed'
+}
+[2024-04-30T19:53:20.963] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:24:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:00:29.292] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:25:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:00:32.418] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:25:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:01:35.418] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:25:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:01:47.289] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:25:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:02:15.189] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:25:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:04:01.483] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:25:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:04:54.727] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:27:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:05:03.546] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:27:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:05:44.025] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:28:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:06:00.882] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:28:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T20:06:44.771] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'toString')
+    at transformMongoModel (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:5:38)
+    at transformMongoObject (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/utils/objectUtils.js:16:22)
+    at UsuariosDaoMongoDb.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMongoDb.js:28:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-04-30T21:03:42.302] [ERROR] default - CastError: Cast to ObjectId failed for value "663029fa4bd545091a3813e" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"663029fa4bd545091a3813e"',
+  kind: 'ObjectId',
+  value: '663029fa4bd545091a3813e',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-01T08:36:39.110] [ERROR] default - CastError: Cast to ObjectId failed for value "{ id: undefined }" (type Object) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"{ id: undefined }"',
+  kind: 'ObjectId',
+  value: { id: undefined },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'Object'
+}
+[2024-05-01T08:36:52.598] [ERROR] default - CastError: Cast to ObjectId failed for value "{ id: undefined }" (type Object) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"{ id: undefined }"',
+  kind: 'ObjectId',
+  value: { id: undefined },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'Object'
+}
+[2024-05-01T08:37:03.516] [ERROR] default - CastError: Cast to ObjectId failed for value "{ id: undefined }" (type Object) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"{ id: undefined }"',
+  kind: 'ObjectId',
+  value: { id: undefined },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'Object'
+}
+[2024-05-01T08:38:35.815] [ERROR] default - CastError: Cast to ObjectId failed for value "{ id: '662d6b67f421aee623daa55d' }" (type Object) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: `"{ id: '662d6b67f421aee623daa55d' }"`,
+  kind: 'ObjectId',
+  value: { id: '662d6b67f421aee623daa55d' },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'Object'
+}
+[2024-05-01T17:13:54.081] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:13:54.098] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:13:54.121] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:13:57.377] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:27:43.352] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:27:46.432] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:27:47.375] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-01T17:27:58.263] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:25:09.661] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:25:11.126] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:25:12.518] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:25:17.343] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:25:28.909] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:25:47.361] [ERROR] default - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Model.$wrapCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5233:32)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4913:10)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-0gt6b9j-shard-00-00.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-02.uewx9nh.mongodb.net:27017' => [ServerDescription],
+      'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net:27017' => [ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-57zfr0-shard-0',
+    maxElectionId: new ObjectId("7fffffff0000000000000010"),
+    maxSetVersion: 2,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-05-03T17:27:12.654] [ERROR] default - MongoNetworkError: getaddrinfo ENOTFOUND ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net
+    at connectionFailureError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connect.js:387:20)
+    at TLSSocket.<anonymous> (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongodb\lib\cmap\connect.js:310:22)
+    at Object.onceWrapper (node:events:628:26)
+    at TLSSocket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  cause: Error: getaddrinfo ENOTFOUND ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'ac-0gt6b9j-shard-00-01.uewx9nh.mongodb.net'
+  },
+  connectionGeneration: 65,
+  [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+}
+[2024-05-06T21:20:41.522] [ERROR] default - CastError: Cast to ObjectId failed for value "FvjPKa7DjSG263VEgocdF2TJuhG5lYRu" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"FvjPKa7DjSG263VEgocdF2TJuhG5lYRu"',
+  kind: 'ObjectId',
+  value: 'FvjPKa7DjSG263VEgocdF2TJuhG5lYRu',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:20:41.531] [ERROR] default - CastError: Cast to ObjectId failed for value "FvjPKa7DjSG263VEgocdF2TJuhG5lYRu" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"FvjPKa7DjSG263VEgocdF2TJuhG5lYRu"',
+  kind: 'ObjectId',
+  value: 'FvjPKa7DjSG263VEgocdF2TJuhG5lYRu',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:21:57.312] [ERROR] default - CastError: Cast to ObjectId failed for value "O__oJXhLcWpPcVVpIYhybBm_RNIfOPYY" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"O__oJXhLcWpPcVVpIYhybBm_RNIfOPYY"',
+  kind: 'ObjectId',
+  value: 'O__oJXhLcWpPcVVpIYhybBm_RNIfOPYY',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:21:57.322] [ERROR] default - CastError: Cast to ObjectId failed for value "O__oJXhLcWpPcVVpIYhybBm_RNIfOPYY" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"O__oJXhLcWpPcVVpIYhybBm_RNIfOPYY"',
+  kind: 'ObjectId',
+  value: 'O__oJXhLcWpPcVVpIYhybBm_RNIfOPYY',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:27:09.874] [ERROR] default - CastError: Cast to ObjectId failed for value "xpYhSNCcb_belnWzkMQ1oJi1nRTwlvGG" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"xpYhSNCcb_belnWzkMQ1oJi1nRTwlvGG"',
+  kind: 'ObjectId',
+  value: 'xpYhSNCcb_belnWzkMQ1oJi1nRTwlvGG',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:27:09.879] [ERROR] default - CastError: Cast to ObjectId failed for value "xpYhSNCcb_belnWzkMQ1oJi1nRTwlvGG" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"xpYhSNCcb_belnWzkMQ1oJi1nRTwlvGG"',
+  kind: 'ObjectId',
+  value: 'xpYhSNCcb_belnWzkMQ1oJi1nRTwlvGG',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:27:33.203] [ERROR] default - CastError: Cast to ObjectId failed for value "RMZrl2eWogGkMXJUnzItP5WAHCmsYZIM" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"RMZrl2eWogGkMXJUnzItP5WAHCmsYZIM"',
+  kind: 'ObjectId',
+  value: 'RMZrl2eWogGkMXJUnzItP5WAHCmsYZIM',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:27:33.211] [ERROR] default - CastError: Cast to ObjectId failed for value "RMZrl2eWogGkMXJUnzItP5WAHCmsYZIM" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"RMZrl2eWogGkMXJUnzItP5WAHCmsYZIM"',
+  kind: 'ObjectId',
+  value: 'RMZrl2eWogGkMXJUnzItP5WAHCmsYZIM',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:27:53.278] [ERROR] default - CastError: Cast to ObjectId failed for value "Ko63wpsb1oX5uC8Ilsr4rC8m_JZUyD0U" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"Ko63wpsb1oX5uC8Ilsr4rC8m_JZUyD0U"',
+  kind: 'ObjectId',
+  value: 'Ko63wpsb1oX5uC8Ilsr4rC8m_JZUyD0U',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:27:53.286] [ERROR] default - CastError: Cast to ObjectId failed for value "Ko63wpsb1oX5uC8Ilsr4rC8m_JZUyD0U" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"Ko63wpsb1oX5uC8Ilsr4rC8m_JZUyD0U"',
+  kind: 'ObjectId',
+  value: 'Ko63wpsb1oX5uC8Ilsr4rC8m_JZUyD0U',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:28:26.273] [ERROR] default - CastError: Cast to ObjectId failed for value "CDz78DmP6CKmtg51okcdk2ydbae5ctV9" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15) {
+  messageFormat: undefined,
+  stringValue: '"CDz78DmP6CKmtg51okcdk2ydbae5ctV9"',
+  kind: 'ObjectId',
+  value: 'CDz78DmP6CKmtg51okcdk2ydbae5ctV9',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-06T21:28:26.281] [ERROR] default - CastError: Cast to ObjectId failed for value "CDz78DmP6CKmtg51okcdk2ydbae5ctV9" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"CDz78DmP6CKmtg51okcdk2ydbae5ctV9"',
+  kind: 'ObjectId',
+  value: 'CDz78DmP6CKmtg51okcdk2ydbae5ctV9',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}
+[2024-05-12T21:11:19.387] [ERROR] default - CastError: Cast to ObjectId failed for value "{ id: '662d6b67f421aee623daa55d' }" (type Object) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: '662d6b67f421aee623daa55d' }"`,
+  kind: 'ObjectId',
+  value: { id: '662d6b67f421aee623daa55d' },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'Object'
+}
+[2024-05-12T21:37:57.905] [ERROR] default - CastError: Cast to ObjectId failed for value "662d6b67f421aee623daa" (type string) at path "_id" for model "Usuarios"
+    at model.Query.exec (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4897:21)
+    at Query.then (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:4996:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"662d6b67f421aee623daa"',
+  kind: 'ObjectId',
+  value: '662d6b67f421aee623daa',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\cast.js:342:32)
+      at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
+  valueType: 'string'
+}

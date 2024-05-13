@@ -21,11 +21,17 @@ class ContenedorMongoDb {
     async listar(id) {
         try {
             const res = await this.collection.find({_id: id})
-            return  this.dto.transform(transformMongoObject(res))
+            if(res.length == 0){
+                return res
+            }else{
+                return this.dto.transform(transformMongoObject(res))[0]
+            }
+
         } catch (error) {
             logger.error(error)
-            return false
+            return Error(error)
         }
+       
     }
 
     async listarAll() {
@@ -38,7 +44,7 @@ class ContenedorMongoDb {
             }
         } catch (error) {
             logger.error(error)
-            return false
+            return Error(error)
         }
     }
 
@@ -48,8 +54,7 @@ class ContenedorMongoDb {
             return this.dto.transform(transformMongoObject(res))
         } catch (error) {
             logger.error( error )
-            return false
-        }
+            return Error(error)        }
     }
 
     async actualizar(id, elemento) {
@@ -58,7 +63,7 @@ class ContenedorMongoDb {
             return res.acknowledged
         } catch (error) {
             logger.error(error)
-            return false
+            return Error(error)
         }
     }
 
@@ -68,7 +73,7 @@ class ContenedorMongoDb {
             return res.acknowledged
         } catch (error) {
             logger.error(error)
-            return false
+            return Error(error)
         }
     }
 
@@ -78,7 +83,7 @@ class ContenedorMongoDb {
             return res.acknowledged
         } catch (error) {
             logger.error(error)
-            return false
+            return Error(error)
         }
     }
 }

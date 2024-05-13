@@ -21,6 +21,8 @@ import { chatWebsocket } from './utils/chat.js'
 import cors from 'cors'
 import { productosDao  } from './model/daos/daosFactory.js'
 import { createManyProducts } from './mocks/productosMocks.js'
+import { RouterUser } from './routes/user.js'
+
 
 console.log('config.PERSISTANCE' , config.PERSISTANCE)
 
@@ -34,7 +36,15 @@ const httpServer = new HttpServer(app)
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
-if(config.NODE_ENV == 'development') app.use(cors())
+//if(config.NODE_ENV == 'development')
+//app.use(cors())
+
+/* app.use(cors({
+    // Permitir todas las solicitudes de origen
+    origin: '*',
+    // Permitir el encabezado Authorization
+    allowedHeaders: 'Authorization',
+})); */
 
 
 //------------------Configuracion EJS--------------------//
@@ -45,8 +55,10 @@ app.set('view engine', 'ejs')
 app.use(session(mongoSession))
 
 //-----------------Passport------------------------------//
+
+
 app.use(passport.initialize())
-app.use(passport.session())
+//app.use(passport.session())
 
 //------------------------------RUTAS---------------------//
 app.use( '/login', LoginRouter.start() )
@@ -58,8 +70,9 @@ app.use( '/cart' , RouterCart.start() )
 app.use( '/chat' , RouterChat.start() )
 app.use( '/config' , ConfigRouter.start())
 app.use( '/products' , RouterProductos.start())
+app.use( '/user' , RouterUser.start())
 
-app.get('*', (req, res) => {
+app.get('*' , (req, res) => {
     res.redirect('/login')
 })
 

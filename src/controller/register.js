@@ -1,6 +1,7 @@
 import { RegisterServices } from "../services/register.js"
 
 let instance = null
+
 export class RegisterController {
 
     constructor () {
@@ -12,29 +13,17 @@ export class RegisterController {
 		return instance;
 	}
 
-    saveNewUser = async ( req , res  ) => {
-
-        const newUser = {
-            nombre: req.body.nombre,
-            apellido: req.body.apellido,
-            direccion: req.body.direccion,
-            edad: req.body.edad,
-            email: req.body.email,
-            password: req.body.password,
-            phone: req.body.telefono
-        }
-        const response = await this.registerServices.saveNewUser( newUser )
-        if(response.error){
-            req.session.message = response.message
-            req.session.route = response.route
-            res.redirect('/error')
-
-        }else{
-            res.redirect('/login')
-        }
+    post = async (req , res ) => {
+        const {email , password } = req.body
+        const result = await this.registerServices.post( email, password )
+        res.json(result)
     }
 
-    render = ( req, res ) => {
-        res.render('pages/register')
+    render = (req, res ) => {
+        res.render('pages/register', {invalidCredentials: false})
+    }
+
+    renderError= (req, res) => {
+        res.render('pages/register', {invalidCredentials: true})
     }
 }
