@@ -1,6 +1,6 @@
 import express from 'express'
 import { Server as HttpServer }  from 'http'
-import session from 'express-session'
+//import session from 'express-session'
 import { mongoSession } from './middleware/mongoSession.js'
 import passport from 'passport'
 import config from './config/config.js'
@@ -18,10 +18,11 @@ import { logger } from './utils/logger.js'
 import { mode } from './utils/yargs.js'
 import { LogoutRouter } from './routes/logout.js'
 import { chatWebsocket } from './utils/chat.js'
-import cors from 'cors'
+//import cors from 'cors'
 import { productosDao  } from './model/daos/daosFactory.js'
 import { createManyProducts } from './mocks/productosMocks.js'
 import { RouterUser } from './routes/user.js'
+import { authentication } from './middleware/auth.js'
 
 
 console.log('config.PERSISTANCE' , config.PERSISTANCE)
@@ -52,7 +53,7 @@ app.set('views', './views')
 app.set('view engine', 'ejs')
 
 //-----------------Session-------------------------------//
-app.use(session(mongoSession))
+//app.use(session(mongoSession))
 
 //-----------------Passport------------------------------//
 
@@ -61,12 +62,12 @@ app.use(passport.initialize())
 //app.use(passport.session())
 
 //------------------------------RUTAS---------------------//
-app.use( '/login', LoginRouter.start() )
+app.use( '/login' ,LoginRouter.start() )
 app.use( '/logout' , LogoutRouter.start())
 app.use( '/register' , RegisterRouter.start() )
 app.use( '/error' , ErrorRouter.start() )
 app.use( '/home' , HomeRouter.start() )
-app.use( '/cart' , RouterCart.start() )
+app.use( '/cart', authentication , RouterCart.start() )
 app.use( '/chat' , RouterChat.start() )
 app.use( '/config' , ConfigRouter.start())
 app.use( '/products' , RouterProductos.start())

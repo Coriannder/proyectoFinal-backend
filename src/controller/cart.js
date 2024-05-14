@@ -16,59 +16,27 @@ export class CartController {
 		return instance;
 	}
 
-    getCart = async (req, res ) => {
-        if(req.isAuthenticated()){
-
-            const user = req.session.passport.user
-            let miCarrito = await this.cartServices.getCart(user)
-
-            res.render('pages/cart', {
-                ...miCarrito ,
-                active: 'cart'
-            })
-        } else {
-            res.redirect('/login' )
-        }
+    getCart = async ( req, res ) => {
+        const userId = req.user.id
+        return await this.services.getCart(userId)
     }
 
-    addProduct = (req, res) => {
-        if(req.isAuthenticated()){
-
-            const user = req.session.passport.user
-            const producto = req.body.producto
-
-            this.cartServices.addProduct( user , producto)
-
-        } else {
-            res.redirect('/login' )
-        }
+    addProduct = async ( req, res ) => {
+        const userId = req.user.id
+        const producto = req.body.producto
+        return await this.cartServices.addProduct( userId , producto)
     }
 
-    deleteProduct = (req, res ) => { // por params mando el id del producto que deseo eliminar
-        if ( req.isAuthenticated() ) {
 
-            const user = req.session.passport.user
-            const idProduct = req.params.id
-
-            this.cartServices.deleteProduct( user , idProduct )
-
-            res.redirect('/cart' )
-        } else {
-            res.redirect('/login' )
-        }
+    deleteProduct = async ( req, res ) => { // por params mando el id del producto que deseo eliminar
+        const userId = req.user.id
+        const ProductId = req.params.id
+        return await this.cartServices.deleteProduct( userId , ProductId )
     }
 
     buyCart = async ( req , res ) => {
-        if ( req.isAuthenticated() ) {
-
-            const user = req.session.passport.user
-            await this.cartServices.buyCart( user )
-
-            res.redirect('/cart' )
-
-        } else {
-            res.redirect('/login' )
-        }
+        const userId = req.user.id
+        return await this.cartServices.buyCart( userId )
     }
 }
 

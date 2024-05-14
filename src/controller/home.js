@@ -21,6 +21,7 @@ export class HomeController {
 
     getHome = async (req, res) => {
         const { id } = req.query
+   
         const productos = await this.productosServices.obtenerProductos()
         const userName = await this.userServices.getName(id)
 

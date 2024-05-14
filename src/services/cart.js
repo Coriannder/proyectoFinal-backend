@@ -1,4 +1,4 @@
-import { ordenesCompraDao, usuariosDao, carritosDao } from "../model/daos/daosFactory.js"
+import { ordenesCompraDao, usuariosDao, carritosDao, productosDao } from "../model/daos/daosFactory.js"
 import { sendMailNewCart } from "../utils/nodemailer.js"
 
 let instance = null;
@@ -8,6 +8,7 @@ export class CartServices {
         this.usuariosDao = usuariosDao
         this.ordenesCompraDao = ordenesCompraDao
         this.carritosDao = carritosDao
+        this.productosDao = productosDao
     }
 
     static getInstance = () => {
@@ -15,32 +16,31 @@ export class CartServices {
 		return instance;
 	}
 
-    getCart = async ( user ) => {
-
+    getCart = async ( userId ) => {
         const carritos = await this.carritosDao.listarAll()
-
-        let miCarrito = carritos.find( carrito => carrito.user === user )
+        let miCarrito = carritos.find( carrito => carrito.user === userId )
 
         if ( !miCarrito ) {
             miCarrito = {}
             miCarrito.user = user
             miCarrito.productos = []
             miCarrito.total = 0
-            miCarrito = await this.carritosDao.guardar(miCarrito)
-        }
 
-        return {
-            nombre : (await this.usuariosDao.listar(user))[0].nombre ,
-            carrito : miCarrito //global.carritos.find(carrito => carrito.user === user),
+            await this.carritosDao.guardar(miCarrito)
         }
+        return miCarrito
     }
 
-    addProduct = async ( user , product ) => {
+    addProduct = async ( userId , product ) => {
 
-        const price = global.productos.find( producto => producto.id === product.id ).price
-        const title = global.productos.find( producto => producto.id === product.id ).title
+        const productos = await this.productosDao.obtenerProductos()
+        if(!productos) throw new Error('No se encontraron productos')
 
-        const miCarrito = (await this.getCart(user)).carrito
+        const price = productos.find( producto => producto.id === product.id ).price
+        const title = productos.find( producto => producto.id === product.id ).title
+        if( !price || !title ) throw new Error('producto no encontrado')
+
+        const miCarrito = (await this.getCart(userId))
         miCarrito.total +=  Number(product.cantidad) * Number(price)
 
         const index = miCarrito.productos.findIndex(producto => producto.id === product.id) // Indice del producto
@@ -49,15 +49,15 @@ export class CartServices {
             :
             miCarrito.productos[index].cantidad = Number(miCarrito.productos[index].cantidad) + Number( product.cantidad)
 
-        await this.carritosDao.actualizar(miCarrito.id , {user: miCarrito.user, productos: miCarrito.productos, total: miCarrito.total })
+        return await this.carritosDao.actualizar(miCarrito.id , {user: miCarrito.user, productos: miCarrito.productos, total: miCarrito.total })
     }
 
 
 
-    deleteProduct = async ( user , idProduct) => {
+    deleteProduct = async ( userId , ProductId) => {
 
-        const miCarrito = (await this.getCart(user)).carrito
-        let index = miCarrito.productos.findIndex(producto => producto.id === idProduct) // indice del producto a eliminar
+        const miCarrito = (await this.getCart(userId)).carrito
+        let index = miCarrito.productos.findIndex(producto => producto.id === ProductId) // indice del producto a eliminar
 
         miCarrito.total -= miCarrito.productos[index].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
         miCarrito.productos.splice(index,1)            // Elimino el producto de miCarrito
@@ -69,10 +69,10 @@ export class CartServices {
         }
     }
 
-    buyCart = async ( user ) => {
+    buyCart = async ( userId ) => {
 
-        const usuario =  (await this.usuariosDao.listar(user))[0]
-        const miCarrito = (await this.getCart(user)).carrito
+        const usuario =  (await this.usuariosDao.listar(userId))[0]
+        const miCarrito = (await this.getCart(userId)).carrito
         await ordenesCompraDao.guardar(miCarrito)
         sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra
         await this.carritosDao.borrar(miCarrito.id)        // Elimino el carrito completo porque ya se realizo la compra
