@@ -51,10 +51,10 @@ class ContenedorMongoDb {
     async guardar(elemento) {
         try {
             const res = await this.collection.create(elemento)
-            return this.dto.transform(transformMongoObject(res))
+            return true //this.dto.transform(transformMongoObject(res))
         } catch (error) {
             logger.error( error )
-            return Error(error)        }
+            return false        }
     }
 
     async actualizar(id, elemento) {
@@ -63,17 +63,17 @@ class ContenedorMongoDb {
             return res.acknowledged
         } catch (error) {
             logger.error(error)
-            return Error(error)
+            return false
         }
     }
 
     async borrar(id) {
         try {
-            const res = await   this.collection.deleteOne({_id: id})
-            return res.acknowledged
+            const res = await this.collection.deleteOne({_id: id})
+            return res.acknowledged && res.deletedCount ? true : false
         } catch (error) {
             logger.error(error)
-            return Error(error)
+            return false
         }
     }
 

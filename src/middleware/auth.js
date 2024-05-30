@@ -28,7 +28,7 @@ export const authentication = (req, res, next)=>{
     if (!user) {
         return res.status(401).send('Error de autenticacion');
     }
-    req.user = user
+    req.userId = user.id
     next()
     })(req, res, next);
 }

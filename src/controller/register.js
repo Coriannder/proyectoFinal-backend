@@ -13,17 +13,9 @@ export class RegisterController {
 		return instance;
 	}
 
-    post = async (req , res ) => {
+    post = async ( req , res ) => {
         const {email , password } = req.body
         const result = await this.registerServices.post( email, password )
         res.json(result)
-    }
-
-    render = (req, res ) => {
-        res.render('pages/register', {invalidCredentials: false})
-    }
-
-    renderError= (req, res) => {
-        res.render('pages/register', {invalidCredentials: true})
     }
 }

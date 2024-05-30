@@ -21,8 +21,8 @@ export class LoginServices {
         try {
             const users = await usuariosDao.listarAll()
             const user = users.find( user => user.email === email )
-            if(!user) return {message: "Credenciales Invalidas"}
-            if(!isValidPassword(password, user.password)) return {message: "Credenciales Invalidas"}
+            if(!user) return {message: "Credenciales Invalidas" , token: false}
+            if(!isValidPassword(password, user.password)) return {message: "Credenciales Invalidas" , token: false}
             const token = jwt.sign({user: {id: user.id , email: user.email}}, config.SECRET_JWT)
             return {message: "Logueado correctamente" , token: token }
 

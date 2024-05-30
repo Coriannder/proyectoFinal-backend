@@ -21,13 +21,13 @@ export class RegisterServices {
         const users = await usuariosDao.listarAll()
         const userFound = users.find(user => user.email === email)
 
-        if(userFound) return {message: 'El email ya se encuentra registrado'}
+        if(userFound) return {message: 'El email ya se encuentra registrado' , register: false}
 
         const passwordHash = createHash(password)
         const isRegistered = await usuariosDao.guardar( { email: email , password: passwordHash })
 
-        if(!isRegistered.id) return {message: "Error de registro"}
-        return {message: "Registro correcto" , userId: isRegistered.id}
+        //if(!isRegistered.id) return {message: "Error de registro"}
+        return {message: "Registro correcto" , register: isRegistered}
     }
 
 

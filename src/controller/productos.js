@@ -1,3 +1,4 @@
+import { response } from "express";
 import { ProductosServices } from "../services/productos.js"
 
 
@@ -15,50 +16,27 @@ export class ProductosController {
 	}
 
     getProducts = async (req, res ) => {
-        if(req.isAuthenticated()){
-
             const products = await this.productosServices.obtenerProductos()
             res.json(products)
-            //res.json('jelou')
-        } else {
-            res.redirect('/login' )
-        }
     }
 
-
     addProduct = async (req, res) => {
-        if(req.isAuthenticated()){
-
-            await this.productosServices.guardarProducto( req.body.producto)
-
-        } else {
-            res.redirect('/login' )
-        }
+        const producto = req.body
+        const isSaved = await this.productosServices.guardarProducto( producto )
+        res.send( isSaved )
     }
 
     updateProduct = async (req , res) => {
-        if ( req.isAuthenticated() ) {
-
-            const idProduct = req.params.id
-            const element = req.body.element
-
-            res.json( await this.productosServices.actualizarProducto( idProduct , element ) )
-        } else {
-            res.redirect('/login' )
-        }
+        const idProduct = req.params.id
+        const element = req.body
+        const isUpdated = await this.productosServices.actualizarProducto( idProduct , element )
+        res.send( isUpdated )
     }
 
     deleteProduct = async (req, res ) => {
-        if ( req.isAuthenticated() ) {
-
             const idProduct = req.params.id
-
-            //res.json(idProduct)
-
-            res.json( await this.productosServices.borrarProducto( idProduct ) )
-        } else {
-            res.redirect('/login' )
-        }
+            const isDeleted = await this.productosServices.borrarProducto( idProduct )
+            res.send( isDeleted )
     }
 
 }

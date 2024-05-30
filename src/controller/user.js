@@ -3,7 +3,6 @@
 let instance = null
 export class UserController {
     constructor() {
-        //this.loginServices = LoginServices.getInstance()
     }
 
     static getInstance = () => {
@@ -12,7 +11,6 @@ export class UserController {
 	}
 
     getUserId = (req, res) => {
-        console.log('req.user-----------' , req.user)
         res.send({id: req.user.id})
     }
 

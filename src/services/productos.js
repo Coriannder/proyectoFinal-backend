@@ -6,7 +6,6 @@ export class ProductosServices {
 
     constructor(){
         this.productosDao = productosDao
-       
     }
 
     static getInstance = () => {
@@ -15,22 +14,23 @@ export class ProductosServices {
 	}
 
     obtenerProductos = async ( id ) => {
-        const productos = id? await this.productosDao.listar(id) : await this.productosDao.listarAll()
-        return productos
-
+        return id? await this.productosDao.listar(id) : await this.productosDao.listarAll()
     }
 
     guardarProducto = async ( product ) => {
-        return await this.productosDao.guardar(product)
+        const isSaved = await this.productosDao.guardar(product)
+        return isSaved
     }
 
 
     actualizarProducto = async (id, elemento) => {
-        return await this.productosDao.actualizar(id , elemento)
+        const isUpdated = await this.productosDao.actualizar(id , elemento)
+        return isUpdated
     }
 
     borrarProducto = async ( id ) => {
-        return await this.productosDao.borrar(id)
+        const isDeleted = await this.productosDao.borrar(id)
+      return isDeleted
     }
 
 }

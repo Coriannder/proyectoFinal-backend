@@ -12,15 +12,7 @@ export class LoginController {
 		if (!instance) instance = new LoginController;
 		return instance;
 	}
-
-    getLogin = (req, res) => {
-        res.render('pages/login', {invalidCredentials: false})
-    }
-
-    getLoginError= (req, res) => {
-        res.render('pages/login', {invalidCredentials: true})
-    }
-
+    
     postLogin = async (req, res) => {
         const { email , password } = req.body
         const token = await this.loginServices.getToken( email , password )

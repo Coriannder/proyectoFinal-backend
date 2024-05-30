@@ -22,7 +22,7 @@ export class CartServices {
 
         if ( !miCarrito ) {
             miCarrito = {}
-            miCarrito.user = user
+            miCarrito.user = userId
             miCarrito.productos = []
             miCarrito.total = 0
 
@@ -33,14 +33,14 @@ export class CartServices {
 
     addProduct = async ( userId , product ) => {
 
-        const productos = await this.productosDao.obtenerProductos()
+        const productos = await this.productosDao.listarAll()
         if(!productos) throw new Error('No se encontraron productos')
 
         const price = productos.find( producto => producto.id === product.id ).price
         const title = productos.find( producto => producto.id === product.id ).title
         if( !price || !title ) throw new Error('producto no encontrado')
 
-        const miCarrito = (await this.getCart(userId))
+        const miCarrito = await this.getCart(userId)
         miCarrito.total +=  Number(product.cantidad) * Number(price)
 
         const index = miCarrito.productos.findIndex(producto => producto.id === product.id) // Indice del producto
@@ -52,30 +52,37 @@ export class CartServices {
         return await this.carritosDao.actualizar(miCarrito.id , {user: miCarrito.user, productos: miCarrito.productos, total: miCarrito.total })
     }
 
-
-
     deleteProduct = async ( userId , ProductId) => {
 
-        const miCarrito = (await this.getCart(userId)).carrito
-        let index = miCarrito.productos.findIndex(producto => producto.id === ProductId) // indice del producto a eliminar
+        const miCarrito = await this.getCart(userId)
 
+        if(!miCarrito) return false
+        let index = miCarrito.productos.findIndex(producto => producto.id === ProductId) // indice del producto a eliminar
+        if(index === -1) return false
         miCarrito.total -= miCarrito.productos[index].price * miCarrito.productos[index].cantidad // resto el precio del producto a eliminar
         miCarrito.productos.splice(index,1)            // Elimino el producto de miCarrito
 
         if(!miCarrito.productos){
-            await this.carritosDao.borrar(miCarrito.id) // si el carrito esta vacio lo elimino de carritos en DB
+            return await this.carritosDao.borrar(miCarrito.id) // si el carrito esta vacio lo elimino de carritos en DB
         }else{
-            await this.carritosDao.actualizar(miCarrito.id , { productos: miCarrito.productos , total: miCarrito.total } )   // Actualizo mi carrito en DB
+            return await this.carritosDao.actualizar(miCarrito.id , { productos: miCarrito.productos , total: miCarrito.total } )   // Actualizo mi carrito en DB
         }
     }
 
     buyCart = async ( userId ) => {
 
-        const usuario =  (await this.usuariosDao.listar(userId))[0]
-        const miCarrito = (await this.getCart(userId)).carrito
-        await ordenesCompraDao.guardar(miCarrito)
-        sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra
-        await this.carritosDao.borrar(miCarrito.id)        // Elimino el carrito completo porque ya se realizo la compra
+        try {
+            const usuario =  await this.usuariosDao.listar(userId)
+            const miCarrito = await this.getCart(userId)
+            if(!miCarrito) return {}
+            await ordenesCompraDao.guardar(miCarrito)
+            sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra
+            await this.carritosDao.borrar(miCarrito.id)
+            return true
+        } catch (error) {
+            console.log(new Error(error))
+            return false
+        }
     }
 }
 

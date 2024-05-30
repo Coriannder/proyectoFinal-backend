@@ -11,7 +11,7 @@ import { HomeRouter } from './routes/home.js'
 import { RouterCart } from './routes/cart.js'
 import { RouterChat } from './routes/chat.js'
 import { ConfigRouter } from './routes/config.js'
-import { RouterProductos } from './routes/productos.js'
+import { RouterProductos } from './routes/products.js'
 import cluster from 'cluster'
 import { cpus } from 'os'
 import { logger } from './utils/logger.js'
@@ -62,19 +62,19 @@ app.use(passport.initialize())
 //app.use(passport.session())
 
 //------------------------------RUTAS---------------------//
-app.use( '/login' ,LoginRouter.start() )
-app.use( '/logout' , LogoutRouter.start())
-app.use( '/register' , RegisterRouter.start() )
-app.use( '/error' , ErrorRouter.start() )
-app.use( '/home' , HomeRouter.start() )
-app.use( '/cart', authentication , RouterCart.start() )
-app.use( '/chat' , RouterChat.start() )
-app.use( '/config' , ConfigRouter.start())
-app.use( '/products' , RouterProductos.start())
-app.use( '/user' , RouterUser.start())
+app.use( '/login', LoginRouter.start() )
+app.use( '/logout', LogoutRouter.start())
+app.use( '/register', RegisterRouter.start() )
+app.use( '/error', ErrorRouter.start() )
+app.use( '/home', HomeRouter.start() )
+app.use( '/cart', RouterCart.start() )
+app.use( '/chat', RouterChat.start() )
+app.use( '/config', ConfigRouter.start())
+app.use( '/products',  RouterProductos.start())
+app.use( '/user', RouterUser.start())
 
 app.get('*' , (req, res) => {
-    res.redirect('/login')
+    res.status(404).send('REQUEST NOT FOUND')
 })
 
 //-------------------------WEBSOCKET----------------------------//
