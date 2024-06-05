@@ -69,12 +69,12 @@ export class CartServices {
         }
     }
 
-    buyCart = async ( userId ) => {
+    buy = async ( userId ) => {
 
         try {
             const usuario =  await this.usuariosDao.listar(userId)
             const miCarrito = await this.getCart(userId)
-            if(!miCarrito) return {}
+            if(!miCarrito) return false
             await ordenesCompraDao.guardar(miCarrito)
             sendMailNewCart(usuario.nombre , usuario.email , miCarrito)       // Envio mail al admin con la nueva compra
             await this.carritosDao.borrar(miCarrito.id)

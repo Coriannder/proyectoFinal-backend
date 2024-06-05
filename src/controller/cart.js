@@ -39,7 +39,7 @@ export class CartController {
 
     buyCart = async ( req , res ) => {
         const userId = req.userId
-        const isBuyed = await this.cartServices.buyCart( userId )
+        const isBuyed = await this.cartServices.buy( userId )
         res.send(isBuyed)
     }
 }
