@@ -34,7 +34,7 @@ const httpServer = new HttpServer(app)
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
-if(config.NODE_ENV == 'development') app.use(cors())
+if(config.NODE_ENV === 'development') app.use(cors())
 
 
 //------------------Configuracion EJS--------------------//

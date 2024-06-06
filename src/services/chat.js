@@ -15,7 +15,7 @@ export class ChatsServices {
 	}
 
     getUserName = async (user) => {
-        return (await this.usuariosDao.listar(user))[0].nombre
+        return await this.usuariosDao.listar(user).nombre
     }
 
     getAllChat = async () => {

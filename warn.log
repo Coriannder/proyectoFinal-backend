@@ -223,3 +223,124 @@
   responseCode: 535,
   command: 'AUTH PLAIN'
 }
+[2024-06-06T16:46:36.806] [ERROR] default - Error: Chats validation failed: email: Path `email` is required.
+    at ValidationError.inspect (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:790:19)
+    at inspect (node:internal/util/inspect:350:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2241:40)
+    at Object.format (node:internal/util/inspect:2098:10)
+    at basicLayout (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:2903:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Chats validation failed'
+}
+[2024-06-06T16:49:47.784] [ERROR] default - Error: Chats validation failed: email: Path `email` is required.
+    at ValidationError.inspect (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:790:19)
+    at inspect (node:internal/util/inspect:350:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2241:40)
+    at Object.format (node:internal/util/inspect:2098:10)
+    at basicLayout (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: ValidatorError: Path `email` is required.
+        at validate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1330:7)
+        at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:2903:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'email',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Chats validation failed'
+}
+[2024-06-06T16:50:29.557] [ERROR] default - Error: Chats validation failed: email: Cast to string failed for value "[
+  UsuarioDto {
+    id: '662d6b67f421aee623daa55d',
+    nombre: 'Lionel',
+    direccion: undefined,
+    edad: undefined,
+    email: 'lio@messi.com',
+    photo: undefined,
+    phone: undefined,
+    password: '$2b$10$uTiRxD1fs.a/wuvu3qgLw.gycntA5fsZJdKuAfKXqwxdpAcLB571G'
+  }
+]" (type Array) at path "email"
+    at ValidationError.inspect (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:790:19)
+    at inspect (node:internal/util/inspect:350:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2241:40)
+    at Object.format (node:internal/util/inspect:2098:10)
+    at basicLayout (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    email: CastError: Cast to string failed for value "[
+      UsuarioDto {
+        id: '662d6b67f421aee623daa55d',
+        nombre: 'Lionel',
+        direccion: undefined,
+        edad: undefined,
+        email: 'lio@messi.com',
+        photo: undefined,
+        phone: undefined,
+        password: '$2b$10$uTiRxD1fs.a/wuvu3qgLw.gycntA5fsZJdKuAfKXqwxdpAcLB571G'
+      }
+    ]" (type Array) at path "email"
+        at SchemaString.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schema\string.js:603:11)
+        at SchemaType.applySetters (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\schematype.js:1201:12)
+        at model.$set (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:1421:22)
+        at model.$set (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:1146:16)
+        at model.Document (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\document.js:166:12)
+        at model.Model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:121:12)
+        at new model (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:5039:15)
+        at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3187:22
+        at C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\model.js:3222:7
+        at Array.forEach (<anonymous>) {
+      stringValue: '"[\n' +
+        '  UsuarioDto {\n' +
+        "    id: '662d6b67f421aee623daa55d',\n" +
+        "    nombre: 'Lionel',\n" +
+        '    direccion: undefined,\n' +
+        '    edad: undefined,\n' +
+        "    email: 'lio@messi.com',\n" +
+        '    photo: undefined,\n' +
+        '    phone: undefined,\n' +
+        "    password: '$2b$10$uTiRxD1fs.a/wuvu3qgLw.gycntA5fsZJdKuAfKXqwxdpAcLB571G'\n" +
+        '  }\n' +
+        ']"',
+      messageFormat: undefined,
+      kind: 'string',
+      value: [Array],
+      path: 'email',
+      reason: null,
+      valueType: 'Array'
+    }
+  },
+  _message: 'Chats validation failed'
+}
