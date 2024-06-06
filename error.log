@@ -3227,3 +3227,23 @@
   command: 'API'
 }
 [2024-06-04T19:19:49.640] [FATAL] default - Error en servidor: Error: listen EADDRINUSE: address already in use :::8080
+[2024-06-06T17:54:39.091] [ERROR] default - Base de datos MONGO no conectada
+[2024-06-06T17:54:57.423] [ERROR] default - Base de datos MONGO no conectada
+[2024-06-06T17:55:25.071] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'price')
+    at new ProductoDto (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/dtos/productoDto.js:6:32)
+    at ProductoDto.asDto (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/dtos/productoDto.js:17:20)
+    at Dto.transform (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/dtos/index.js:28:43)
+    at ProductosDaoMemoria.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMemoria.js:10:31)
+    at ProductosServices.obtenerProductos (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/services/productos.js:17:44)
+    at file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/prueba.js:15:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/prueba.js:8:1
+[2024-06-06T17:58:01.579] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'price')
+    at new ProductoDto (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/dtos/productoDto.js:6:32)
+    at ProductoDto.asDto (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/dtos/productoDto.js:17:20)
+    at Dto.transform (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/dtos/index.js:28:43)
+    at ProductosDaoMemoria.listar (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/model/container/ContenedorMemoria.js:10:31)
+    at ProductosServices.obtenerProductos (file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/src/services/productos.js:17:44)
+    at file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/prueba.js:17:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/sebas/Dropbox/PROGRAMACION/CODERHOUSE/FULLSTACK/4.BackEnd/ProyectoFinal__BackEnd/prueba.js:10:1

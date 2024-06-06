@@ -18,7 +18,7 @@ const createProduct = () => {
         id: idProduct,
         title: faker.commerce.product(),
         price: Math.trunc( faker.commerce.price() ),
-        thumbnail: faker.image.abstract( 640 , 480 , true)
+        thumbnail: faker.image.avatar()
     }
 }
 

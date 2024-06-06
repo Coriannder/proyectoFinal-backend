@@ -1,15 +1,11 @@
 import express from 'express'
 import { Server as HttpServer }  from 'http'
 //import session from 'express-session'
-import { mongoSession } from './middleware/mongoSession.js'
 import passport from 'passport'
 import config from './config/config.js'
 import { LoginRouter } from './routes/login.js'
 import {  RegisterRouter } from './routes/register.js'
-import { ErrorRouter } from './routes/error.js'
-import { HomeRouter } from './routes/home.js'
 import { RouterCart } from './routes/cart.js'
-import { RouterChat } from './routes/chat.js'
 import { ConfigRouter } from './routes/config.js'
 import { RouterProductos } from './routes/products.js'
 import cluster from 'cluster'
@@ -21,9 +17,6 @@ import { chatWebsocket } from './utils/chat.js'
 //import cors from 'cors'
 import { productosDao  } from './model/daos/daosFactory.js'
 import { createManyProducts } from './mocks/productosMocks.js'
-import { RouterUser } from './routes/user.js'
-import { authentication } from './middleware/auth.js'
-
 
 console.log('config.PERSISTANCE' , config.PERSISTANCE)
 
@@ -65,13 +58,9 @@ app.use(passport.initialize())
 app.use( '/login', LoginRouter.start() )
 app.use( '/logout', LogoutRouter.start())
 app.use( '/register', RegisterRouter.start() )
-app.use( '/error', ErrorRouter.start() )
-app.use( '/home', HomeRouter.start() )
 app.use( '/cart', RouterCart.start() )
-app.use( '/chat', RouterChat.start() )
 app.use( '/config', ConfigRouter.start())
 app.use( '/products',  RouterProductos.start())
-app.use( '/user', RouterUser.start())
 
 app.get('*' , (req, res) => {
     res.status(404).send('REQUEST NOT FOUND')
