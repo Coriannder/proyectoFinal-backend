@@ -40,15 +40,9 @@ export const sendMailNewUser = async ( newUser ) => {
     try {
         const infoAdmin = await transporter.sendMail( mailOptionsNewUser('admin', newUser))
         const infoNewUser = await transporter.sendMail(mailOptionsNewUser('user', newUser))
-        logger.info('mail enviado al Admin' , infoAdmin)
-        logger.info('mail enviado al nuevo usuario' , infoNewUser)
-
-        console.log( 'mailOptionsNewUser', mailOptionsNewUser('admin', newUser))
-
-
-
+        return true
     } catch (err) {
-        logger.error(err)
+        throw new Error(err)
     }
 
 }
@@ -73,16 +67,11 @@ export const sendMailNewCart = async ( nombre, email, cart ) => {
             });
 
     try {
-
         const infoAdmin = await transporter.sendMail(mailOptionsNewCart('admin', nombre, email, cart.total, listaProductosCarrito))
         const infoUser = await transporter.sendMail(mailOptionsNewCart('user', nombre, email, cart.total, listaProductosCarrito))
-        logger.info('mail enviado al Admin' , infoAdmin)
-        logger.info('mail enviado al Usuario' , infoUser)
-
-        console.log( mailOptionsNewCart , mailOptionsNewCart('admin', nombre, email, cart.total, listaProductosCarrito) )
-
+        return true
     } catch (err) {
-        logger.error(err)
+        throw new Error(err)
     }
 
 }
