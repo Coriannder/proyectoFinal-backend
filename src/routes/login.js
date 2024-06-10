@@ -12,7 +12,7 @@ export class LoginRouter {
     static start() {
 
         login.get('/' ,  loginController.getLogin)
-        login.post('/' , loginController.postLogin, authenticate )
+        login.post('/' , authenticate )
 
         return login
     }

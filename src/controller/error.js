@@ -14,10 +14,8 @@ export class ErrorController{
 	}
 
     getError = (req, res ) => {
-
-        const route = req.session.route
         res.render('pages/error' , {
-            message: req.session.message || 'Error',
+            message: req.session.message || 'Error de credenciales',
             route: req.session.route || 'login'
         })
         req.session.destroy()

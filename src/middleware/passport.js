@@ -6,19 +6,14 @@ import { isValidPassword } from '../utils/crypt.js'
 
 passport.use('login' , new LocalStrategy( async ( username , password , done) => {
 
-    const usuarios = []
-    Array.prototype.push.apply(usuarios , await usuariosDao.listarAll() );
-    if( usuarios === false ) done( Error('error') )
-    const user = usuarios.find(usuario => usuario.email === username)
-    if( !user) {
-        done(null, false)
-    }else{
-        if(isValidPassword(password , user.password)){
-            done(null, user)
-        } else {
-            done(null, false)
-        }
-    }}) )
+    const users = await usuariosDao.listarAll()
+    if(!users) return done( Error('error'))
+    const user = users.find(user => user.email === username)
+    if(!user) return done(null , false)
+    if(!isValidPassword(password , user.password)) return done(null, false)
+    return done(null, user)
+
+}))
 
 passport.serializeUser(( user, done ) => {
     done(null, user.id)
