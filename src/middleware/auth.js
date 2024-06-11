@@ -19,7 +19,7 @@ passport.use( new JwtStrategy( opts, async ( token,  done) => {
 }))
 
 
-export const authentication = (req, res, next)=>{
+export const authentication = (req, res, next) => {
 
     passport.authenticate('jwt' , {session: false } , (err, user, info) => {
     if (err) {

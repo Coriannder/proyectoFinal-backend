@@ -1,6 +1,5 @@
 import express from 'express'
 import { Server as HttpServer }  from 'http'
-//import session from 'express-session'
 import passport from 'passport'
 import config from './config/config.js'
 import { LoginRouter } from './routes/login.js'
@@ -40,19 +39,8 @@ app.use(express.static('public'))
     allowedHeaders: 'Authorization',
 })); */
 
-
-//------------------Configuracion EJS--------------------//
-app.set('views', './views')
-app.set('view engine', 'ejs')
-
-//-----------------Session-------------------------------//
-//app.use(session(mongoSession))
-
 //-----------------Passport------------------------------//
-
-
 app.use(passport.initialize())
-//app.use(passport.session())
 
 //------------------------------RUTAS---------------------//
 app.use( '/login', LoginRouter.start() )
@@ -61,46 +49,37 @@ app.use( '/register', RegisterRouter.start() )
 app.use( '/cart', RouterCart.start() )
 app.use( '/config', ConfigRouter.start())
 app.use( '/products',  RouterProductos.start())
-
-app.get('*' , (req, res) => {
-    res.status(404).send('REQUEST NOT FOUND')
-})
+app.get('*' , (req, res) =>  res.status(404).send('REQUEST NOT FOUND') )
 
 //-------------------------WEBSOCKET----------------------------//
 const io = chatWebsocket(httpServer)
 
 //--------------------------Modo CLUSTER------------------------//
-
 const numCPUs = cpus().length;
-
 if( mode === 'cluster' ){
     if (cluster.isPrimary) {
         logger.info(`Primary ${process.pid} is running`);
-
         // Fork workers.
         for (let i = 0; i < numCPUs; i++) {
             cluster.fork();
         }
-
         cluster.on('exit', (worker, code, signal) => {
             logger.info(`worker ${worker.process.pid} died`);
             cluster.fork();
             logger.info(`worker ${worker.process.pid} is running`);
         });
 
-    } else {
+    }
+    else {
 //------------------Configuracion Server---------------------------------//
-
         const server = httpServer.listen(process.env.PORT, ()=>{
             logger.info(`Servidor escuchando en el puerto ${server.address().port}`, `numero de cpus ${numCPUs}`)
         })
         server.on(`error`, error => logger.fatal(`Error en servidor: ${error}`))
     }
-
-} else {
-
+}
+else {
     //------------------Configuracion Server---------------------------------//
-
     const server = httpServer.listen(config.PORT, () => {
         try {
             logger.info(`Servidor escuchando en el puerto ${server.address().port}`, `numero de cpus ${numCPUs}`)
@@ -109,5 +88,4 @@ if( mode === 'cluster' ){
         }
     })
     server.on(`error`, error => logger.fatal(`Error en servidor: ${error}`))
-
 }
