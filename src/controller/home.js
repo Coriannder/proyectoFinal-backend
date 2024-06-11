@@ -16,10 +16,6 @@ export class HomeController {
     getHome = async (req, res) => {
         if(req.isAuthenticated()){
 
-            console.log('req.user' , req.user)
-
-            console.log('req.session',req.session)
-
             const user = req.session.passport.user
             const products = await this.homeServices.getUserNameAndProducts(user)
 

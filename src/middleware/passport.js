@@ -15,8 +15,8 @@ passport.use('login' , new LocalStrategy( async ( username , password , done) =>
 
 }))
 
-passport.serializeUser(( id, done ) => {
-    done(null, id)
+passport.serializeUser(( user, done ) => {
+    done(null, user)
 })
 
 passport.deserializeUser( async (id, done) => {
