@@ -11,12 +11,12 @@ passport.use('login' , new LocalStrategy( async ( username , password , done) =>
     const user = users.find(user => user.email === username)
     if(!user) return done(null , false)
     if(!isValidPassword(password , user.password)) return done(null, false)
-    return done(null, user)
+    return done(null, user.id)
 
 }))
 
-passport.serializeUser(( user, done ) => {
-    done(null, user.id)
+passport.serializeUser(( id, done ) => {
+    done(null, id)
 })
 
 passport.deserializeUser( async (id, done) => {
