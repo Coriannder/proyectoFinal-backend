@@ -10,6 +10,10 @@ opts.secretOrKey = config.SECRET_JWT;
 
 passport.use( new JwtStrategy( opts, async ( token,  done) => {
     try {
+
+        const tokenExpiration = token.exp + config.SESSIONTIME
+        const currentDateTime = Date.now();
+        if (currentDateTime > tokenExpiration) return done(null, false, { message: 'Token expirado' });
         const userDto = await usuariosDao.listar( token.user.id )
         if(!userDto) done(null, false)
         done(null, token.user)
@@ -26,7 +30,7 @@ export const authentication = (req, res, next) => {
         return res.status(401).send(err)
     }
     if (!user) {
-        return res.status(401).send('Error de autenticacion');
+        return res.status(401).send(info);
     }
     req.userId = user.id
     next()

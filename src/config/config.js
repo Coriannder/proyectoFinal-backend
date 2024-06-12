@@ -5,7 +5,7 @@ import { NODE_ENV , PERSISTANCE , PORT , SESSIONTIME } from '../utils/yargs.js'
 let persistance
 let port
 let node_env
-const sessionTime = Number(SESSIONTIME || process.env.SESSIONTIME)*60000
+const sessionTime =  isNaN(SESSIONTIME) ? Number(process.env.SESSIONTIME)*1000 : SESSIONTIME
 
 if(NODE_ENV === 'production'){
     persistance = 'mongo'
