@@ -10,7 +10,7 @@ opts.secretOrKey = config.SECRET_JWT;
 
 passport.use( new JwtStrategy( opts, async ( token,  done) => {
     try {
-
+        if(!token.exp) return done(null, false, { message: 'Token invalido' })
         const tokenExpiration = token.exp + config.SESSIONTIME
         const currentDateTime = Date.now();
         if (currentDateTime > tokenExpiration) return done(null, false, { message: 'Token expirado' });
