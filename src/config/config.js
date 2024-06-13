@@ -17,7 +17,7 @@ if(NODE_ENV === 'production'){
 }
 
 export default {
-    NODE_ENV: NODE_ENV,
+    NODE_ENV: node_env || process.env.NODE_ENV,
     PERSISTANCE: persistance || process.env.PERSISTANCE,
     PORT: port || process.env.PORT,
     URL_MONGO: process.env.URL_MONGO,

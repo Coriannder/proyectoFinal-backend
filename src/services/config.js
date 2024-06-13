@@ -15,7 +15,6 @@ export class ConfigServices {
             NODE_ENV: config.NODE_ENV,
             PERSISTANCE: config.PERSISTANCE,
             PORT: config.PORT,
-            URL_MONGO: config.URL_MONGO,
             USER_MAILADMIN: config.USER_MAILADMIN,
         }
     }
