@@ -15,7 +15,6 @@ export class ConfigController{
 
     getConfig = (req, res ) => {
         const data = this.configServices.getData()
-        console.log(data)
         res.json(data)
     }
 }
