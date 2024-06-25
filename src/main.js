@@ -5,7 +5,6 @@ import config from './config/config.js'
 import { LoginRouter } from './routes/login.js'
 import {  RegisterRouter } from './routes/register.js'
 import { RouterCart } from './routes/cart.js'
-import { ConfigRouter } from './routes/config.js'
 import { RouterProductos } from './routes/products.js'
 import cluster from 'cluster'
 import { cpus } from 'os'
@@ -47,7 +46,6 @@ app.use( '/login', LoginRouter.start() )
 app.use( '/logout', LogoutRouter.start())
 app.use( '/register', RegisterRouter.start() )
 app.use( '/cart', RouterCart.start() )
-app.use( '/config', ConfigRouter.start())
 app.use( '/products',  RouterProductos.start())
 app.get('*' , (req, res) =>  res.status(404).send('REQUEST NOT FOUND') )
 

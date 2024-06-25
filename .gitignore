@@ -1,4 +1,6 @@
 # dependencies
 /node_modules
 *.env
+# Local Netlify folder
+.netlify
 prueba.js
