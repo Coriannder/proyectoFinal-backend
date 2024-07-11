@@ -495,3 +495,5 @@
       at Query.cast (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\ProyectoFinal__BackEnd\node_modules\mongoose\lib\query.js:5325:12),
   valueType: 'Object'
 }
+[2024-07-11T17:24:56.632] [FATAL] default - Error en servidor: Error: listen EADDRINUSE: address already in use :::8080
+[2024-07-11T17:27:58.421] [FATAL] default - Error en servidor: Error: listen EADDRINUSE: address already in use :::8080

@@ -16,13 +16,11 @@ import { chatWebsocket } from './utils/chat.js'
 import { productosDao  } from './model/daos/daosFactory.js'
 import { createManyProducts } from './mocks/productosMocks.js'
 
-console.log('config.PERSISTANCE' , config.PERSISTANCE)
-
-// Mockeo 5 productos para trabajar en memoria
-if( config.PERSISTANCE === 'memoria') createManyProducts(5).forEach(async elem => { const pp = await productosDao.guardar(elem)})
+console.log('PERSISTANCE' , config.PERSISTANCE)
+// Mockeo 10 productos para trabajar en memoria
+if( config.PERSISTANCE === 'memoria') createManyProducts(10).forEach(async elem => await productosDao.guardar(elem))
 
 const app = express()
-
 const httpServer = new HttpServer(app)
 
 app.use(express.json())
