@@ -28,7 +28,7 @@ Este proyecto es el backend de un ecommerce desarrollado en Express, utilizando 
         ```
 
 3. Crea un archivo .env en la raiz del proyecto con las siguientes variables de entorno (los valores son a modo ilustrativo):
-
+    ```sh
     NODE_ENV='development'
     PORT=8080 (o el que quieras)
     PERSISTANCE='memoria'
@@ -36,9 +36,9 @@ Este proyecto es el backend de un ecommerce desarrollado en Express, utilizando 
     URL_MONGO='URL-de-tu-base-de-datos-MONGODB'
     SECRET_SESSION_MONGO='clave-secreta-para-la-session-mongo'
     SECRET_JWT='clave-secreta-para-generar-token-JWT'
-
     USER_MAILADMIN='tumail@mail.com'
     PASS_MAILADMIN='clave-secreta-para-confugurar-mail'
+    ```
 
 4. Correr el proyecto
 
