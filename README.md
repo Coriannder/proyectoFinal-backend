@@ -62,5 +62,3 @@ Este proyecto es el backend de un ecommerce desarrollado en Express, utilizando 
 ## Documentacion de la API
 
 La documentacion de la API la encontras en el siguiente link: [Documentacion](https://documenter.getpostman.com/view/21750027/2sA3XPC2w2)
-
-
