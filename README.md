@@ -23,9 +23,10 @@ Este proyecto es el backend de un ecommerce desarrollado en Express, utilizando 
 1. Clona el repositorio.
 
 2. Instala las dependencias utilizando el comando
-        ```sh
-            npm install
-        ```
+
+    ```sh
+        npm install
+    ```
 
 3. Crea un archivo .env en la raiz del proyecto con las siguientes variables de entorno (los valores son a modo ilustrativo):
     ```sh
